@@ -1,0 +1,190 @@
+<main
+	class="dotted-background-wrapper flex h-screen flex-col items-center justify-center !bg-black"
+>
+	<div class="flex h-[90%] w-[95%] flex-col">
+		<div class="mt-16">
+			<h1 id="dept-welcome-text" class="font-bebas text-center text-7xl text-white">
+				Check out our
+			</h1>
+			<h1 id="dept-welcome-text" class="font-bebas text-center text-7xl text-white">Departments</h1>
+		</div>
+
+		<div class="flex grow flex-row items-center justify-center gap-x-6">
+			<div class="card w-72 bg-[#F1B81A] text-white backdrop-blur-[0.1rem]">
+				<figure class="px-10 pt-10">
+					<img
+						src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+						alt="Shoes"
+						class="rounded-xl"
+					/>
+				</figure>
+				<div class="card-body items-center text-center">
+					<h2
+						class="es-card-title card-title font-bebas text-2xl tracking-wider"
+						style:--es-title-text="es-title-text"
+					>
+						Embedded Systems
+					</h2>
+					<p>
+						A card component has a figure, a body part, and inside body there are title and actions
+						parts
+					</p>
+					<div class="card-actions">
+						<a
+							href="departments/embedded_systems"
+							class="btn border-none bg-[#edd183] text-white shadow-none">Visit Projects</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<div class="card w-72 bg-[#38b6ff] text-white backdrop-blur-[0.1rem]">
+				<figure class="px-10 pt-10">
+					<img
+						src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+						alt="Shoes"
+						class="rounded-xl"
+					/>
+				</figure>
+				<div class="card-body items-center text-center">
+					<h2
+						class="iot-card-title card-title font-bebas text-2xl tracking-wider"
+						style:--iot-title-text="iot-title-text"
+					>
+						Internet Of Things
+					</h2>
+					<p>
+						A card component has a figure, a body part, and inside body there are title and actions
+						parts
+					</p>
+					<div class="card-actions">
+						<a href="departments/iot" class="btn border-none bg-[#253d95] text-white shadow-none"
+							>Visit Projects</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<div class="card w-72 bg-[#4f2882] text-white backdrop-blur-[0.1rem]">
+				<figure class="px-10 pt-10">
+					<img
+						src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+						alt="Shoes"
+						class="rounded-xl"
+					/>
+				</figure>
+				<div class="card-body items-center text-center">
+					<h2
+						class="cv-card-title card-title font-bebas text-2xl tracking-wider"
+						style:--cv-title-text="cv-title-text"
+					>
+						Computer Vision
+					</h2>
+					<p>
+						A card component has a figure, a body part, and inside body there are title and actions
+						parts
+					</p>
+					<div class="card-actions">
+						<a
+							href="/departments/computer_vision"
+							class="btn border-none bg-[#ad7ded] text-white shadow-none">Visit Projects</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<div class="card w-72 bg-[#724e39] text-white backdrop-blur-[0.1rem]">
+				<figure class="px-10 pt-10">
+					<img
+						src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+						alt="Shoes"
+						class="rounded-xl"
+					/>
+				</figure>
+				<div class="card-body items-center text-center">
+					<h2
+						class="circuitry-card-title card-title font-bebas text-2xl tracking-wider"
+						style:--circuitry-title-text="circuitry-title-text"
+					>
+						Circuitry
+					</h2>
+					<p>
+						A card component has a figure, a body part, and inside body there are title and actions
+						parts
+					</p>
+					<div class="card-actions">
+						<a
+							href="departments/circuitry"
+							class="btn border-none bg-[#d39160] text-white shadow-none">Visit Projects</a
+						>
+					</div>
+				</div>
+			</div>
+			<div class="card w-72 bg-[#737373] text-white backdrop-blur-[0.1rem]">
+				<figure class="px-10 pt-10">
+					<img
+						src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+						alt="Shoes"
+						class="rounded-xl"
+					/>
+				</figure>
+				<div class="card-body items-center text-center">
+					<h2
+						class="robotronics-card-title card-title font-bebas text-2xl tracking-wider"
+						style:--robotronics-title-text="robotronics-title-text"
+					>
+						Robotronics
+					</h2>
+					<p>
+						A card component has a figure, a body part, and inside body there are title and actions
+						parts
+					</p>
+					<div class="card-actions">
+						<a
+							href="departments/robotronics"
+							class="btn border-none bg-[#d4d4d4] text-white shadow-none">Visit Projects</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<style>
+	.dotted-background-wrapper {
+		background-color: transparent;
+		background: radial-gradient(circle, rgb(22, 22, 22) 10%, transparent 1%) 0 0 / 20px 20px;
+		background-size: 35px 35px; /* !!!!!THIS SHOULD BE SAME AS THE BACKGROUND POSITION CELL SIZE IN THE KEYFRAME OTHERWISE YOU'LL SEE HORRIBLE STUTTERING!!!!! */
+		animation: moveLeft 2s linear infinite;
+	}
+
+	@keyframes moveLeft {
+		0% {
+			background-position: 0 0;
+		}
+		100% {
+			background-position: 35px -35px; /* Moves by exactly one grid cell size */
+		}
+	}
+
+	.es-card-title {
+		view-transition-name: var(--es-title-text);
+	}
+
+	.iot-card-title {
+		view-transition-name: var(--iot-title-text);
+	}
+
+	.cv-card-title {
+		view-transition-name: var(--cv-title-text);
+	}
+
+	.circuitry-card-title {
+		view-transition-name: var(--circuitry-title-text);
+	}
+
+	.robotronics-card-title {
+		view-transition-name: var(--robotronics-title-text);
+	}
+</style>

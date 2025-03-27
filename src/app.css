@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Cinzel:wght@400..900&family=Galada&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Jua&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'tailwindcss';
+@plugin 'daisyui' {
+	themes: light --default;
+}
+
+@theme {
+	--font-bebas: 'Bebas Neue', 'sans-serif';
+	--font-jua: 'Jua', 'sans-serif';
+	--font-inria-sans: 'Inria Sans', 'sans-serif';
+	--color-purple: #474a73;
+	--color-es-primary: #f1b81a;
+	--color-es-accent: #edd183;
+	--color-iot-primary: #38b6ff;
+	--color-iot-accent: #253d95;
+	--color-cv-primary: #4f2882;
+	--color-cv-accent: #ad7ded;
+	--color-circuitry-primary: #724e39;
+	--color-circuitry-accent: #724e39;
+	--color-circuitry-accent: #d39160;
+	--color-robotronics-primary: #737373;
+	--color-robotronics-accent: #d4d4d4;
+}
