@@ -8,8 +8,6 @@
 	import gsap from 'gsap';
 	import { onMount } from 'svelte';
 
-	let mouseHoverOverNavbarIcon = false;
-
 	onMount(() => {
 		gsap
 			.fromTo(

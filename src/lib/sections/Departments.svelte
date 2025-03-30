@@ -1,15 +1,17 @@
 <main
-	class="dotted-background-wrapper flex h-screen flex-col items-center justify-center !bg-[#171717]"
+	class="dotted-background-wrapper flex min-h-screen flex-col items-center justify-center !bg-[#171717]"
 >
 	<div class="flex h-[90%] w-[95%] flex-col">
-		<div class="mt-16">
+		<div class="mt-16 mb-12">
 			<h1 id="dept-welcome-text" class="font-bebas text-center text-7xl text-white">
 				Check out our
 			</h1>
 			<h1 id="dept-welcome-text" class="font-bebas text-center text-7xl text-white">Departments</h1>
 		</div>
 
-		<div class="flex grow flex-row items-center justify-center gap-x-6">
+		<div
+			class="flex grow flex-col items-center justify-center gap-y-10 pb-12 md:flex-row md:gap-x-6 md:pb-0"
+		>
 			<div class="card h-84 w-80 bg-[#F1B81A] text-white backdrop-blur-[0.1rem]">
 				<figure class="px-6 pt-6">
 					<img
@@ -20,7 +22,7 @@
 				</figure>
 				<div class="card-body items-center text-center">
 					<h2
-						class="es-card-title card-title font-bebas text-2xl tracking-wider"
+						class="es-card-title card-title font-bebas text-4xl tracking-wider md:text-2xl"
 						style:--es-title-text="es-title-text"
 					>
 						Embedded Systems
@@ -48,7 +50,7 @@
 				</figure>
 				<div class="card-body items-center text-center">
 					<h2
-						class="iot-card-title card-title font-bebas text-2xl tracking-wider"
+						class="iot-card-title card-title font-bebas text-4xl tracking-wider md:text-2xl"
 						style:--iot-title-text="iot-title-text"
 					>
 						IOT And Circuitry
@@ -75,7 +77,7 @@
 				</figure>
 				<div class="card-body items-center text-center">
 					<h2
-						class="cv-card-title card-title font-bebas text-2xl tracking-wider"
+						class="cv-card-title card-title font-bebas text-4xl tracking-wider md:text-2xl"
 						style:--cv-title-text="cv-title-text"
 					>
 						Computer Vision
@@ -103,7 +105,7 @@
 				</figure>
 				<div class="card-body items-center text-center">
 					<h2
-						class="robotronics-card-title card-title font-bebas text-2xl tracking-wider"
+						class="robotronics-card-title card-title font-bebas text-4xl tracking-wider md:text-2xl"
 						style:--robotronics-title-text="robotronics-title-text"
 					>
 						Robotronics

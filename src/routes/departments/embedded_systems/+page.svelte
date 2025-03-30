@@ -19,13 +19,19 @@
 	class="dotted-background-wrapper text-purple flex min-h-screen flex-col items-center justify-center !bg-[#F1B81A]"
 >
 	<div class="flex h-full w-full flex-col">
-		<div class="flex h-[20%] flex-col items-center justify-center pt-28 pb-12">
-			<h1
-				class="es-card-title text-purple font-bebas text-9xl"
+		<div class="flex h-[20%] flex-col items-center justify-center pt-20 pb-12">
+			<div
 				style:--es-title-text="es-title-text"
+				class="es-card-title bg-purple flex w-full flex-row items-center justify-center border-4 p-4"
 			>
-				Embedded Systems
-			</h1>
+				<h1 class="text-es-accent font-league-gothic text-5xl md:text-9xl">EMBEDDED</h1>
+				<img
+					src="/src/lib/images/logos/es_base_logo.png"
+					class="max-h-20 rounded-full md:max-h-32"
+					alt="es_logo_base"
+				/>
+				<h1 class="text-es-accent font-league-gothic text-5xl md:text-9xl">SYSTEMS</h1>
+			</div>
 		</div>
 
 		<div class="flex flex-col items-center">
@@ -43,10 +49,13 @@
 			</div>
 		</div>
 
-		<div class="flex h-screen flex-col gap-y-2">
+		<div class="flex min-h-screen flex-col gap-y-2 md:h-screen">
 			<h1 class="font-bebas pt-12 pb-0 pl-12 text-6xl">Our Projects</h1>
-			<div class="flex w-full grow flex-row items-center justify-center gap-x-4">
-				<div class="card bg-es-accent h-[60%] w-[40%]">
+
+			<div
+				class="flex w-full grow flex-col items-center justify-center gap-x-4 gap-y-10 p-5 md:flex-row md:gap-y-0 md:p-6"
+			>
+				<div class="card bg-es-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
 						<h2 class="card-title text-3xl">
 							Efficient Thermal Management System for Small Satellites
@@ -57,12 +66,14 @@
 						</p>
 						<div class="card-actions justify-end">
 							<!-- <button class="btn bg-es-primary border-none shadow-none">Read More!</button> -->
-							<label for="my_modal_6" class="btn bg-es-primary border-none shadow-none">Read More</label>
+							<label for="my_modal_6" class="btn bg-es-primary border-none shadow-none"
+								>Read More</label
+							>
 						</div>
 					</div>
 				</div>
 
-				<div class="card bg-es-accent h-[60%] w-[40%]">
+				<div class="card bg-es-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
 						<h2 class="card-title text-3xl">
 							Hardware-Assisted Encryption for Resource-Constrained Devices

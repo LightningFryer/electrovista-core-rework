@@ -7,14 +7,14 @@
 
 <input type="checkbox" id="cv-proj-2" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
-	<div class="modal-box flex h-[90%] !w-[60%] !max-w-full flex-col gap-y-7">
-		<h3 class="font-kanit text-center text-4xl font-bold">
+	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-7 md:!w-[60%]">
+		<h3 class="font-kanit text-center text-2xl font-bold md:text-4xl">
 			Objection Detection using Thermal Imaging Camera
 		</h3>
 		<div class="flex flex-col items-center justify-center gap-y-7">
 			<img
 				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/dept_images/cv/cv-proj-2.png"
-				class="h-[26rem]"
+				class="md:h-[26rem]"
 				alt="thermal_imaging"
 			/>
 			<a
@@ -77,13 +77,19 @@
 	class="dotted-background-wrapper !bg-cv-primary flex min-h-screen flex-col items-center justify-center text-white"
 >
 	<div class="flex h-full w-full flex-col">
-		<div class="flex h-[20%] flex-col items-center justify-center pt-28 pb-12">
-			<h1
-				class="cv-card-title font-bebas text-9xl text-white"
+		<div class="flex h-[20%] flex-col items-center justify-center pt-20 pb-12">
+			<div
 				style:--cv-title-text="cv-title-text"
+				class="cv-card-title flex w-full flex-row items-center justify-center bg-[#7E5CAD] p-4 text-white"
 			>
-				Computer Vision
-			</h1>
+				<h1 class="font-league-gothic text-5xl md:text-9xl">COMPUTER</h1>
+				<img
+					src="/src/lib/images/logos/cv_base_logo.png"
+					class="max-h-20 rounded-full md:max-h-32"
+					alt="es_logo_base"
+				/>
+				<h1 class="font-league-gothic text-5xl md:text-9xl">VISION</h1>
+			</div>
 		</div>
 
 		<div class="flex flex-col items-center">
@@ -101,10 +107,13 @@
 			</div>
 		</div>
 
-		<div class="flex h-screen flex-col gap-y-2">
+		<div class="flex min-h-screen flex-col gap-y-2 md:h-screen">
 			<h1 class="font-bebas pt-12 pb-0 pl-12 text-6xl">Our Projects</h1>
-			<div class="flex w-full grow flex-row items-center justify-center gap-x-4 p-4">
-				<div class="card bg-cv-accent h-[60%] w-[40%]">
+
+			<div
+				class="flex w-full grow flex-col items-center justify-center gap-x-4 gap-y-10 p-5 md:flex-row md:gap-y-0 md:p-6"
+			>
+				<div class="card bg-cv-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
 						<h2 class="card-title text-3xl">Obstacle avoidance robot</h2>
 						<p>
@@ -119,7 +128,7 @@
 					</div>
 				</div>
 
-				<div class="card bg-cv-accent h-[60%] w-[40%]">
+				<div class="card bg-cv-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
 						<h2 class="card-title text-3xl">Objection Detection using Thermal Imaging Camera</h2>
 						<p>
@@ -134,7 +143,7 @@
 					</div>
 				</div>
 
-				<div class="card bg-cv-accent h-[60%] w-[40%]">
+				<div class="card bg-cv-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
 						<h2 class="card-title text-3xl">Gesture controlled device switch</h2>
 						<p>
@@ -149,7 +158,7 @@
 					</div>
 				</div>
 
-				<div class="card bg-cv-accent h-[60%] w-[40%]">
+				<div class="card bg-cv-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
 						<h2 class="card-title text-3xl">Face Detection based door lock</h2>
 						<p>

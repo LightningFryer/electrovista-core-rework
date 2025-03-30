@@ -19,13 +19,19 @@
 	class="dotted-background-wrapper flex min-h-screen flex-col items-center justify-center !bg-[#38B6FF] text-white"
 >
 	<div class="flex h-full w-full flex-col">
-		<div class="flex h-[20%] flex-col items-center justify-center pt-28 pb-12">
-			<h1
-				class="iot-card-title font-bebas text-9xl text-white"
+		<div class="flex h-[20%] flex-col items-center justify-center pt-20 pb-12">
+			<div
 				style:--iot-title-text="iot-title-text"
+				class="iot-card-title bg-iot-accent flex w-full flex-row items-center justify-center p-4 text-white"
 			>
-				IOT and Circuitry
-			</h1>
+				<h1 class="font-league-gothic text-5xl md:text-9xl">IOT AND</h1>
+				<img
+					src="/src/lib/images/logos/iot_circuitry_base_logo.png"
+					class="max-h-20 rounded-full md:max-h-32"
+					alt="es_logo_base"
+				/>
+				<h1 class="font-league-gothic text-5xl md:text-9xl">CIRCUITRY</h1>
+			</div>
 		</div>
 
 		<div class="flex flex-col items-center">
@@ -43,10 +49,13 @@
 			</div>
 		</div>
 
-		<div class="flex h-screen flex-col gap-y-2">
+		<div class="flex min-h-screen flex-col gap-y-2 md:h-screen">
 			<h1 class="font-bebas pt-12 pb-0 pl-12 text-6xl">Our Projects</h1>
-			<div class="flex w-full grow flex-row items-center justify-center gap-x-4">
-				<div class="card bg-iot-accent h-[60%] w-[40%]">
+
+			<div
+				class="flex w-full grow flex-col items-center justify-center gap-x-4 gap-y-10 p-5 md:flex-row md:gap-y-0 md:p-6"
+			>
+				<div class="card bg-iot-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
 						<h2 class="card-title text-3xl">Bionic arm with flex sensors</h2>
 						<p>
@@ -61,7 +70,7 @@
 					</div>
 				</div>
 
-				<div class="card bg-iot-accent h-[60%] w-[40%]">
+				<div class="card bg-iot-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
 						<h2 class="card-title text-3xl">
 							Hardware-Assisted Encryption for Resource-Constrained Devices
