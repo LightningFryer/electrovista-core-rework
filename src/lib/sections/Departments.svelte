@@ -51,7 +51,7 @@
 						class="iot-card-title card-title font-bebas text-2xl tracking-wider"
 						style:--iot-title-text="iot-title-text"
 					>
-						Internet Of Things
+						IOT And Circuitry
 					</h2>
 					<p>
 						A card component has a figure, a body part, and inside body there are title and actions
@@ -93,33 +93,6 @@
 				</div>
 			</div>
 
-			<div class="card w-72 bg-[#724e39] text-white backdrop-blur-[0.1rem]">
-				<figure class="px-10 pt-10">
-					<img
-						src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-						alt="Shoes"
-						class="rounded-xl"
-					/>
-				</figure>
-				<div class="card-body items-center text-center">
-					<h2
-						class="circuitry-card-title card-title font-bebas text-2xl tracking-wider"
-						style:--circuitry-title-text="circuitry-title-text"
-					>
-						Circuitry
-					</h2>
-					<p>
-						A card component has a figure, a body part, and inside body there are title and actions
-						parts
-					</p>
-					<div class="card-actions">
-						<a
-							href="departments/circuitry"
-							class="btn border-none bg-[#d39160] text-white shadow-none">Visit Projects</a
-						>
-					</div>
-				</div>
-			</div>
 			<div class="card w-72 bg-[#737373] text-white backdrop-blur-[0.1rem]">
 				<figure class="px-10 pt-10">
 					<img
