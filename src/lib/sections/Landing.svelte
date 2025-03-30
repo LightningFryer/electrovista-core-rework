@@ -20,7 +20,11 @@
 	class="dotted-background-wrapper flex h-screen flex-col items-center justify-center !bg-black"
 >
 	<div class="text-default-text mt-20 flex h-full w-full flex-col items-center justify-center">
-		<img src="src\lib\images\elec.png" alt="electrovista_logo" class="h-72" />
+		<img
+			src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/logos/elec.png"
+			alt="electrovista_logo"
+			class="h-72"
+		/>
 
 		<button class="btn btn-lg cursor-pointer rounded-full">Scroll on to see more!</button>
 	</div>
