@@ -13,7 +13,7 @@
 		</h3>
 		<div class="flex flex-col items-center justify-center gap-y-7">
 			<img
-				src="/src/lib/images/dept_images/cv/thermal_imaging.png"
+				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/dept_images/cv/cv-proj-2.png"
 				class="h-[26rem]"
 				alt="thermal_imaging"
 			/>
@@ -35,7 +35,7 @@
 		<h3 class="font-kanit text-center text-4xl font-bold">Gesture controlled device switch</h3>
 		<div class="flex flex-col items-center justify-center gap-y-7">
 			<img
-				src="/src/lib/images/dept_images/cv/cv-proj-3.png"
+				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/dept_images/cv/cv-proj-3.png"
 				class="h-[26rem]"
 				alt="thermal_imaging"
 			/>
@@ -57,7 +57,7 @@
 		<h3 class="font-kanit text-center text-4xl font-bold">Face Detection based door lock</h3>
 		<div class="flex flex-col items-center justify-center gap-y-7">
 			<img
-				src="/src/lib/images/dept_images/cv/cv-proj-4.png"
+				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/dept_images/cv/cv-proj-4.png"
 				class="h-[26rem]"
 				alt="thermal_imaging"
 			/>
