@@ -7,7 +7,7 @@
 	onmouseleave={() => (navrailOpen = false)}
 	class="absolute z-20 flex {navrailOpen
 		? 'translate-x-[0%]'
-		: 'translate-x-[-100%]'} max-h-screen min-h-screen bg-black p-8 transition-[translate] duration-200 ease-in-out"
+		: 'translate-x-[-100%]'} max-h-screen min-h-screen bg-[#3A6351]/80 p-8 transition-[translate] duration-200 ease-in-out"
 >
 	<div class="flex h-full flex-col items-center justify-center gap-3">
 		<a

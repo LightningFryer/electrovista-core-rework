@@ -4,9 +4,7 @@
 	import gsap from 'gsap';
 </script>
 
-<nav
-	class="fixed z-20 flex h-20 max-w-screen min-w-screen bg-black shadow-white/10 shadow-2xl"
->
+<nav class="fixed z-20 flex h-20 max-w-screen min-w-screen bg-[#3A6351]/80 shadow-2xl shadow-black">
 	<div class="flex flex-col">
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<!-- svelte-ignore a11y_click_events_have_key_events -->

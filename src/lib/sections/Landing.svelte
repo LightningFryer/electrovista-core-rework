@@ -17,7 +17,7 @@
 </script>
 
 <main
-	class="dotted-background-wrapper flex h-screen flex-col items-center justify-center !bg-black"
+	class="dotted-background-wrapper flex h-screen flex-col items-center justify-center !bg-[#171717]"
 >
 	<div class="text-default-text mt-20 flex h-full w-full flex-col items-center justify-center">
 		<img
@@ -33,7 +33,7 @@
 <style>
 	.dotted-background-wrapper {
 		background-color: transparent;
-		background: radial-gradient(circle, rgb(22, 22, 22) 10%, transparent 1%) 0 0 / 20px 20px;
+		background: radial-gradient(circle, #444444 10%, transparent 1%) 0 0 / 20px 20px;
 		background-size: 35px 35px; /* !!!!!THIS SHOULD BE SAME AS THE BACKGROUND POSITION CELL SIZE IN THE KEYFRAME OTHERWISE YOU'LL SEE HORRIBLE STUTTERING!!!!! */
 		animation: moveLeft 2s linear infinite;
 	}

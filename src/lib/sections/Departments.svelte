@@ -1,5 +1,5 @@
 <main
-	class="dotted-background-wrapper flex h-screen flex-col items-center justify-center !bg-black"
+	class="dotted-background-wrapper flex h-screen flex-col items-center justify-center !bg-[#171717]"
 >
 	<div class="flex h-[90%] w-[95%] flex-col">
 		<div class="mt-16">
@@ -10,10 +10,10 @@
 		</div>
 
 		<div class="flex grow flex-row items-center justify-center gap-x-6">
-			<div class="card w-72 bg-[#F1B81A] text-white backdrop-blur-[0.1rem]">
-				<figure class="px-10 pt-10">
+			<div class="card h-84 w-80 bg-[#F1B81A] text-white backdrop-blur-[0.1rem]">
+				<figure class="px-6 pt-6">
 					<img
-						src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/logos/club_logo_es.png"
 						alt="Shoes"
 						class="rounded-xl"
 					/>
@@ -38,10 +38,10 @@
 				</div>
 			</div>
 
-			<div class="card w-72 bg-[#38b6ff] text-white backdrop-blur-[0.1rem]">
-				<figure class="px-10 pt-10">
+			<div class="card h-84 w-80 bg-[#38b6ff] text-white backdrop-blur-[0.1rem]">
+				<figure class="px-6 pt-6">
 					<img
-						src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/logos/club_logo_iot.png"
 						alt="Shoes"
 						class="rounded-xl"
 					/>
@@ -65,10 +65,10 @@
 				</div>
 			</div>
 
-			<div class="card w-72 bg-[#4f2882] text-white backdrop-blur-[0.1rem]">
-				<figure class="px-10 pt-10">
+			<div class="card h-84 w-80 bg-[#4f2882] text-white backdrop-blur-[0.1rem]">
+				<figure class="px-6 pt-6">
 					<img
-						src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/logos/club_logo_cv.png"
 						alt="Shoes"
 						class="rounded-xl"
 					/>
@@ -93,10 +93,10 @@
 				</div>
 			</div>
 
-			<div class="card w-72 bg-[#737373] text-white backdrop-blur-[0.1rem]">
-				<figure class="px-10 pt-10">
+			<div class="card h-84 w-80 bg-[#737373] text-white backdrop-blur-[0.1rem]">
+				<figure class="px-6 pt-6">
 					<img
-						src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/logos/club_logo_robo.png"
 						alt="Shoes"
 						class="rounded-xl"
 					/>
@@ -127,7 +127,7 @@
 <style>
 	.dotted-background-wrapper {
 		background-color: transparent;
-		background: radial-gradient(circle, rgb(22, 22, 22) 10%, transparent 1%) 0 0 / 20px 20px;
+		background: radial-gradient(circle, #444444 10%, transparent 1%) 0 0 / 20px 20px;
 		background-size: 35px 35px; /* !!!!!THIS SHOULD BE SAME AS THE BACKGROUND POSITION CELL SIZE IN THE KEYFRAME OTHERWISE YOU'LL SEE HORRIBLE STUTTERING!!!!! */
 		animation: moveLeft 2s linear infinite;
 	}
