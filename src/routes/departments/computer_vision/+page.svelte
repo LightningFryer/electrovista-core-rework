@@ -8,7 +8,7 @@
 
 <input type="checkbox" id="cv-proj-1" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
-	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-7 md:!w-[60%]">
+	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-4 md:!w-[60%]">
 		<h3 class="font-kanit text-center text-2xl font-bold md:text-4xl">Obstacle avoidance robot</h3>
 		<div class="flex flex-col items-center justify-center gap-y-7">
 			<figure>
@@ -18,6 +18,46 @@
 				This is a robot that can detect and avoid obstacles in its path using ultrasonic sensors and
 				camera vision.
 			</p>
+
+			<p class="font-kanit text-left text-4xl font-semibold">Features</p>
+			<ul class="list-disc p-4">
+				<li class="text-lg">
+					<span class="font-semibold">Raspberry Pi Camera / USB Camera</span>: Captures real-time
+					video for obstacle detection
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Raspberry Pi</span>: Processes video feed and applies Canny
+					edge detection
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Motor Driver Module</span>: Controls motor movements based on
+					detected obstacles
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">DC Motors</span>: Enables the robot to navigate around
+					obstacles
+				</li>
+			</ul>
+			<p class="font-kanit text-left text-4xl font-semibold">How it Works</p>
+			<ul class="list-disc p-6">
+				<li class="text-lg">
+					<span class="font-semibold">Canny Edge Detection</span>: Identifies obstacle edges in the
+					video feed
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Region-Based Edge Analysis</span>:
+					<ul class="list-disc pl-6">
+						<li>More edges on the left? → Turn right</li>
+						<li>More edges on the right? → Turn left</li>
+						<li>Edges on both sides? → Stop</li>
+						<li>No edges detected? → Move forward</li>
+					</ul>
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Motor Control via Raspberry Pi GPIO</span>: Adjusts movement
+					based on obstacle detection
+				</li>
+			</ul>
 		</div>
 		<div class="modal-action">
 			<label for="cv-proj-1" class="btn hover:btn-error">Close!</label>
@@ -27,7 +67,7 @@
 
 <input type="checkbox" id="cv-proj-2" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
-	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-7 md:!w-[60%]">
+	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-4 md:!w-[60%]">
 		<h3 class="font-kanit text-center text-2xl font-bold md:text-4xl">
 			Objection Detection using Thermal Imaging Camera
 		</h3>
@@ -40,8 +80,105 @@
 			<a
 				href="https://www.tinkercad.com/things/4zaomXCqKvE/editel?sharecode=mJMEkcDn2BVW9ZeP65ccdaxq-RHERdvDQ2FF3fTezlk"
 				target="_blank"
-				class="btn hover:btn-primary p-5 text-2xl">Find out more about this simulation here</a
+				class="btn bg-[#3A6351] p-5 text-2xl text-white hover:bg-[#3A6351]/90"
+				>Find out more about this simulation here</a
 			>
+			<p class="font-kanit text-left text-2xl font-semibold">Components Comparison</p>
+			<table class="table md:w-auto">
+				<thead>
+					<tr class="">
+						<th class="">Components</th>
+						<th class="">Simulation model</th>
+						<th class="">Real-world model</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="">Microcontroller</td>
+						<td class="">Arduino Uno3</td>
+						<td class="">Raspberry Pi4</td>
+					</tr>
+					<tr>
+						<td class="">Temperature sensor</td>
+						<td class="">TMP36 (simulated)</td>
+						<td class="">MLX90640 (thermal imaging sensor)</td>
+					</tr>
+					<tr>
+						<td class="">Display</td>
+						<td class="">16x2 LCD (non-I2C)</td>
+						<td class="">Laptop display</td>
+					</tr>
+					<tr>
+						<td class="">Cooling system</td>
+						<td class="">Not required</td>
+						<td class="">Heat sink and fan for Raspberry Pi</td>
+					</tr>
+					<tr>
+						<td class="">Power supply</td>
+						<td class="">Simulated 5V from Arduino</td>
+						<td class="">5V USB-C adapter for Raspberry Pi</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p class="font-kanit text-left text-2xl font-semibold">Simulation Components</p>
+			<ul class="list-disc p-6">
+				<li class="text-lg">
+					<span class="font-semibold">Arduino Uno</span>: Acts as the microcontroller to process
+					data and control the system
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">TMP36 Temperature Sensor</span>: Simulates temperature
+					readings and outputs an analog voltage
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">16x2 LCD Display</span>: Displays the temperature and object
+					classification
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Potentiometer</span>: Adjusts the contrast of the LCD display
+				</li>
+			</ul>
+
+			<p class="font-kanit text-left text-2xl font-semibold">Simulation Flow</p>
+			<ul class="list-disc p-6">
+				<li class="text-lg">
+					<span class="font-semibold">Temperature Sensing</span>:
+					<ul class="list-disc pl-6">
+						<li>TMP36 sensor simulates temperature readings</li>
+						<li>Outputs an analog voltage proportional to the temperature</li>
+						<li>Arduino reads the voltage and converts it into Celsius</li>
+					</ul>
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Object Classification</span>:
+					<ul class="list-disc pl-6">
+						<li>Temperature above 30°C → Classified as Human/Dog</li>
+						<li>Temperature below 30°C → Classified as Car/Bike</li>
+					</ul>
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Display Output</span>:
+					<ul class="list-disc pl-6">
+						<li>First Line: Displays object classification (e.g., "Human/Dog" or "Car/Bike")</li>
+						<li>Second Line: Displays temperature value in Celsius (e.g., "Temp: 35.00 C")</li>
+					</ul>
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Adjusting Contrast</span>:
+					<ul class="list-disc pl-6">
+						<li>Potentiometer adjusts LCD contrast</li>
+						<li>Turning the knob makes the text clearer or dimmer</li>
+					</ul>
+				</li>
+			</ul>
+
+			<p class="font-kanit text-left text-2xl font-semibold">Tinkercad Interaction</p>
+			<ul class="list-disc p-6">
+				<li class="text-lg">Manually adjust TMP36 temperature values</li>
+				<li class="text-lg">Arduino processes new values and updates the LCD in real-time</li>
+				<li class="text-lg">Observe object classification changes based on temperature</li>
+			</ul>
 		</div>
 		<div class="modal-action">
 			<label for="cv-proj-2" class="btn hover:btn-error">Close!</label>
@@ -51,19 +188,111 @@
 
 <input type="checkbox" id="cv-proj-3" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
-	<div class="modal-box flex h-[90%] !w-[60%] !max-w-full flex-col gap-y-7">
+	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-4 md:!w-[60%]">
 		<h3 class="font-kanit text-center text-4xl font-bold">Gesture controlled device switch</h3>
-		<div class="flex flex-col items-center justify-center gap-y-7">
+		<div class="font-inria-sans flex flex-col items-center justify-center gap-y-7">
 			<img
-				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/dept_images/cv/cv-proj-3.png"
+				src={`${blobStoreUrl}/images/dept_images/cv/cv-proj-3.png`}
 				class="h-[26rem]"
 				alt="thermal_imaging"
 			/>
 			<a
 				href="https://www.tinkercad.com/things/id9DlXaa2Zo-gesture-control-simulation/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard&sharecode=0JXSgxLohKDK9rw4TkHF2HQ5sljCF3oLptvVVn0EPuU"
 				target="_blank"
-				class="btn hover:btn-primary p-5 text-2xl">Find out more about this simulation here</a
+				class="btn bg-[#3A6351] p-5 text-2xl text-white hover:bg-[#3A6351]/90"
+				>Find out more about this simulation here</a
 			>
+			<p class="text-lg">
+				A user wants to control a bulb in their room using hand gestures. Instead of pressing a
+				traditional switch, they can use a simple hand wave or other gestures to turn the bulb on or
+				off. This makes it easier to control the appliance without physically interacting with a
+				switch, which is especially useful for people with limited mobility or for anyone who wants
+				a more modern way to interact with their home appliances.
+			</p>
+
+			<p class="font-kanit text-left text-2xl font-semibold">Raspberry Pi Setup</p>
+			<ul class="list-disc p-6">
+				<li class="text-lg">
+					<span class="font-semibold">Raspberry Pi</span>: Any model with camera support (e.g.,
+					Raspberry Pi 3 or 4)
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Relay Module</span>: Controls the table lamp based on detected
+					gestures
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Camera Module</span>: Captures hand gestures for processing
+					(via OpenCV or APDS-9960)
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">LCD Screen (Optional)</span>: Displays lamp status and other
+					information
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Power Supply</span>: Powers Raspberry Pi and connected
+					components
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Wires & Connectors</span>: Connects the relay and other
+					components
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Table Lamp</span>: Connected to the relay module for
+					gesture-based control
+				</li>
+			</ul>
+
+			<p class="font-kanit text-left text-2xl font-semibold">How It Works</p>
+			<ul class="list-disc p-6">
+				<li class="text-lg">
+					<span class="font-semibold">Gesture Detection</span>:
+					<ul class="list-disc pl-6">
+						<li>Camera module captures real-time images of the user's hand</li>
+						<li>OpenCV processes gestures like hand waves or specific hand shapes</li>
+						<li>Example: Open hand → Turns light on, Fist → Turns light off</li>
+					</ul>
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Control Logic</span>:
+					<ul class="list-disc pl-6">
+						<li>Raspberry Pi processes the camera feed to recognize gestures</li>
+						<li>When a gesture is detected, Raspberry Pi triggers the relay module</li>
+						<li>Relay is connected to GPIO pins, acting as a switch for the lamp</li>
+						<li>Python script configures GPIO pins to send HIGH or LOW signals</li>
+					</ul>
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Status Display</span>:
+					<ul class="list-disc pl-6">
+						<li>LCD screen (if connected) displays "On" or "Off" based on gesture recognition</li>
+					</ul>
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Power Supply</span>:
+					<ul class="list-disc pl-6">
+						<li>Raspberry Pi requires a 5V power supply</li>
+						<li>Relay module may need a separate power source depending on lamp voltage</li>
+					</ul>
+				</li>
+			</ul>
+
+			<p class="font-kanit text-left text-2xl font-semibold">
+				Camera Setup and Gesture Recognition
+			</p>
+			<ul class="list-disc p-6">
+				<li class="text-lg">
+					Raspberry Pi camera module or external camera captures real-time images
+				</li>
+				<li class="text-lg">Python script in OpenCV processes camera feed and detects gestures</li>
+				<li class="text-lg">Defines a region of interest (ROI) where hand detection occurs</li>
+			</ul>
+
+			<p class="font-kanit text-left text-2xl font-semibold">Relay Control via GPIO</p>
+			<ul class="list-disc p-6">
+				<li class="text-lg">GPIO pins control physical hardware based on gesture detection</li>
+				<li class="text-lg">HIGH signal → Completes the relay circuit, turning lamp on</li>
+				<li class="text-lg">LOW signal → Opens the circuit, turning lamp off</li>
+			</ul>
 		</div>
 		<div class="modal-action">
 			<label for="cv-proj-3" class="btn hover:btn-error">Close!</label>
@@ -73,19 +302,73 @@
 
 <input type="checkbox" id="cv-proj-4" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
-	<div class="modal-box flex h-[90%] !w-[60%] !max-w-full flex-col gap-y-7">
+	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-4 md:!w-[60%]">
 		<h3 class="font-kanit text-center text-4xl font-bold">Face Detection based door lock</h3>
 		<div class="flex flex-col items-center justify-center gap-y-7">
 			<img
-				src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/dept_images/cv/cv-proj-4.png"
+				src={`${blobStoreUrl}/images/dept_images/cv/cv-proj-4.png`}
 				class="h-[26rem]"
 				alt="thermal_imaging"
 			/>
 			<a
 				href="https://www.tinkercad.com/things/gU26ZlUNKoE-powerful-leelo-gaaris?sharecode=lY8w-XzHrQkRxMLgXN1QJEOO1JFryehTrLEa-6vnPnk"
 				target="_blank"
-				class="btn hover:btn-primary p-5 text-2xl">Find out more about this simulation here</a
+				class="btn bg-[#3A6351] p-5 text-2xl text-white hover:bg-[#3A6351]/90"
+				>Find out more about this simulation here</a
 			>
+			<p class="font-kanit text-left text-2xl font-semibold">Workflow</p>
+
+			<ul class="list-disc p-6">
+				<li class="text-lg">
+					<span class="font-semibold">Face Detection and Recognition</span>:
+					<ul class="list-disc pl-6">
+						<li>Camera continuously captures frames for face detection</li>
+						<li>Face detection algorithm processes the frames</li>
+						<li>Detected face is compared against stored face data in the system</li>
+					</ul>
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Triggering the Lock</span>:
+					<ul class="list-disc pl-6">
+						<li>Recognized face → Raspberry Pi sends signal to relay module</li>
+						<li>Relay activates solenoid lock, unlocking the door</li>
+						<li>Unrecognized face → System keeps door locked</li>
+						<li>LCD screen displays "Access Denied" message</li>
+					</ul>
+				</li>
+			</ul>
+
+			<p class="font-kanit text-left text-2xl font-semibold">
+				Steps for Face Database Implementation
+			</p>
+
+			<ul class="list-disc p-6">
+				<li class="text-lg">
+					<span class="font-semibold">Capture and Store Faces (Training Phase)</span>:
+					<ul class="list-disc pl-6">
+						<li>System captures and stores images of authorized users</li>
+						<li>Images are saved in a database (folder labeled with each person's name)</li>
+						<li>
+							Once a face is added, the system trains the model (LBPH recognizer) for recognition
+						</li>
+					</ul>
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Training the Recognizer</span>:
+					<ul class="list-disc pl-6">
+						<li>Captured images are used to train the LBPH face recognizer</li>
+						<li>The trained model is saved to a file for future face recognition</li>
+					</ul>
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Face Recognition during Operation (Runtime Phase)</span>:
+					<ul class="list-disc pl-6">
+						<li>During normal operation, the camera detects faces in real-time</li>
+						<li>Detected face is compared with stored data in the database</li>
+						<li>Matched face → Unlocks door, Unmatched face → Access Denied</li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 		<div class="modal-action">
 			<label for="cv-proj-4" class="btn hover:btn-error">Close!</label>

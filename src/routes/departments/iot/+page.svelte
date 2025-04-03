@@ -11,7 +11,8 @@
 		<h3 class="font-kanit text-center text-2xl font-bold md:text-4xl">Obstacle avoidance robot</h3>
 		<div class="flex flex-col items-center justify-center gap-y-7">
 			<figure>
-				<video src={`${blobStoreUrl}/videos/robotronics/robo_proj_1_vid.mp4`} muted controls></video>
+				<video src={`${blobStoreUrl}/videos/robotronics/robo_proj_1_vid.mp4`} muted controls
+				></video>
 			</figure>
 			<p class="font-inria-sans text-2xl">
 				This is a robot that can detect and avoid obstacles in its path using ultrasonic sensors and
@@ -42,15 +43,15 @@
 		<div class="flex h-[20%] flex-col items-center justify-center pt-20 pb-12">
 			<div
 				style:--iot-title-text="iot-title-text"
-				class="iot-card-title bg-iot-accent flex w-full flex-row items-center justify-center p-4 text-white"
+				class="iot-card-title bg-iot-accent/85 flex w-full flex-row items-center justify-center p-4 text-white"
 			>
-				<h1 class="font-league-gothic text-5xl md:text-9xl">IOT AND</h1>
+				<h1 class="font-league-gothic text-5xl md:text-9xl">INTERNET</h1>
 				<img
-					src="/src/lib/images/logos/iot_circuitry_base_logo.png"
-					class="max-h-20 rounded-full md:max-h-32"
+					src="/src/lib/images/logos/iot_base_logo.png"
+					class="max-h-20 rounded-full md:max-h-28"
 					alt="es_logo_base"
 				/>
-				<h1 class="font-league-gothic text-5xl md:text-9xl">CIRCUITRY</h1>
+				<h1 class="font-league-gothic text-5xl md:text-9xl">OF THINGS</h1>
 			</div>
 		</div>
 

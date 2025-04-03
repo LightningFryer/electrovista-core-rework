@@ -112,12 +112,18 @@
 >
 	<div class="flex h-full w-full flex-col">
 		<div class="flex h-[20%] flex-col items-center justify-center pt-28 pb-12">
-			<h1
-				class="robotronics-card-title font-bebas text-9xl"
-				style:--robotronics-title-text="robotronics-title-text"
+			<div
+				style:--circuitry-title-text="circuitry-title-text"
+				class="circuitry-card-title bg-robotronics-accent/65 flex w-full flex-row items-center justify-center p-4 text-white"
 			>
-				Robotronics
-			</h1>
+				<h1 class="font-league-gothic text-5xl md:text-9xl">ROBOT</h1>
+				<img
+					src="/src/lib/images/logos/robo_base_logo.png"
+					class="max-h-20 rounded-full md:max-h-32"
+					alt="es_logo_base"
+				/>
+				<h1 class="font-league-gothic text-5xl md:text-9xl">RONICS</h1>
+			</div>
 		</div>
 
 		<div class="flex flex-col items-center">
