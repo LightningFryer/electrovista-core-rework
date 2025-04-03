@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { blobStoreUrl } from '$lib/blobStoreUrl';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
@@ -113,12 +114,12 @@
 	<div class="flex h-full w-full flex-col">
 		<div class="flex h-[20%] flex-col items-center justify-center pt-28 pb-12">
 			<div
-				style:--circuitry-title-text="circuitry-title-text"
-				class="circuitry-card-title bg-robotronics-accent/65 flex w-full flex-row items-center justify-center p-4 text-white"
+				style:--robo-title-text="robo-title-text"
+				class="robo-card-title bg-robotronics-accent/65 flex w-full flex-row items-center justify-center p-4 text-white"
 			>
 				<h1 class="font-league-gothic text-5xl md:text-9xl">ROBOT</h1>
 				<img
-					src="/src/lib/images/logos/robo_base_logo.png"
+					src={`${blobStoreUrl}/images/logos/robo_base_logo.png`}
 					class="max-h-20 rounded-full md:max-h-32"
 					alt="es_logo_base"
 				/>
@@ -226,7 +227,7 @@
 		}
 	}
 
-	.robotronics-card-title {
-		view-transition-name: var(--robotronics-title-text);
+	.robo-card-title {
+		view-transition-name: var(--robo-title-text);
 	}
 </style>

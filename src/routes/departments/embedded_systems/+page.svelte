@@ -1,8 +1,13 @@
 <script lang="ts">
+	import { blobStoreUrl } from '$lib/blobStoreUrl';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
 </script>
+
+<svelte:head>
+	<title>Electrovista | Embedded Systems</title>
+</svelte:head>
 
 <input type="checkbox" id="es_modal_2" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
@@ -92,7 +97,7 @@
 			>
 				<h1 class="text-es-accent font-league-gothic text-5xl md:text-9xl">EMBEDDED</h1>
 				<img
-					src="/src/lib/images/logos/es_base_logo.png"
+					src={`${blobStoreUrl}/images/logos/es_base_logo.png`}
 					class="max-h-20 rounded-full md:max-h-32"
 					alt="es_logo_base"
 				/>

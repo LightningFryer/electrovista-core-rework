@@ -6,6 +6,10 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
+<svelte:head>
+	<title>Electrovista | Computer Vision</title>
+</svelte:head>
+
 <input type="checkbox" id="cv-proj-1" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
 	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-4 md:!w-[60%]">
@@ -387,7 +391,7 @@
 			>
 				<h1 class="font-league-gothic text-5xl md:text-9xl">COMPUTER</h1>
 				<img
-					src="/src/lib/images/logos/cv_base_logo.png"
+					src={`${blobStoreUrl}/images/logos/cv_base_logo.png`}
 					class="max-h-20 rounded-full md:max-h-32"
 					alt="es_logo_base"
 				/>

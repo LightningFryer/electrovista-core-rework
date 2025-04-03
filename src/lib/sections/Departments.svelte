@@ -1,3 +1,7 @@
+<script>
+	import { blobStoreUrl } from '$lib/blobStoreUrl';
+</script>
+
 <main
 	class="dotted-background-wrapper flex min-h-screen flex-col items-center justify-center !bg-[#171717]"
 >
@@ -12,12 +16,12 @@
 		<div
 			class="flex grow flex-col items-center justify-center gap-y-10 pb-12 md:flex-row md:gap-x-6 md:pb-0"
 		>
-			<div class="card h-84 w-80 bg-[#F1B81A] text-white backdrop-blur-[0.1rem]">
+			<div class="card bg-es-primary h-84 w-80 text-white backdrop-blur-[0.1rem]">
 				<figure class="px-6 pt-6">
 					<img
-						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/logos/club_logo_es.png"
+						src={`${blobStoreUrl}/images/logos/club_logo_es.png`}
 						alt="Shoes"
-						class="rounded-xl"
+						class="h-16 rounded-xl bg-white"
 					/>
 				</figure>
 				<div class="card-body items-center text-center">
@@ -43,9 +47,9 @@
 			<div class="card h-84 w-80 bg-[#38b6ff] text-white backdrop-blur-[0.1rem]">
 				<figure class="px-6 pt-6">
 					<img
-						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/logos/club_logo_iot.png"
+						src={`${blobStoreUrl}/images/logos/club_logo_iot.png`}
 						alt="Shoes"
-						class="rounded-xl"
+						class="h-16 rounded-xl bg-white"
 					/>
 				</figure>
 				<div class="card-body items-center text-center">
@@ -53,7 +57,7 @@
 						class="iot-card-title card-title font-bebas text-4xl tracking-wider md:text-2xl"
 						style:--iot-title-text="iot-title-text"
 					>
-						IOT And Circuitry
+						Internet of Things
 					</h2>
 					<p>
 						A card component has a figure, a body part, and inside body there are title and actions
@@ -70,9 +74,9 @@
 			<div class="card h-84 w-80 bg-[#4f2882] text-white backdrop-blur-[0.1rem]">
 				<figure class="px-6 pt-6">
 					<img
-						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/logos/club_logo_cv.png"
+						src={`${blobStoreUrl}/images/logos/club_logo_cv.png`}
 						alt="Shoes"
-						class="rounded-xl"
+						class="h-16 rounded-xl bg-white"
 					/>
 				</figure>
 				<div class="card-body items-center text-center">
@@ -98,9 +102,9 @@
 			<div class="card bg-circuitry-primary h-84 w-80 text-white backdrop-blur-[0.1rem]">
 				<figure class="px-6 pt-6">
 					<img
-						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/logos/club_logo_iot.png"
+						src={`${blobStoreUrl}/images/logos/club_logo_circuitry.png`}
 						alt="Shoes"
-						class="rounded-xl"
+						class="h-16 rounded-xl bg-white"
 					/>
 				</figure>
 				<div class="card-body items-center text-center">
@@ -117,7 +121,7 @@
 					<div class="card-actions">
 						<a
 							href="departments/circuitry"
-							class="btn border-none bg-circuitry-accent text-white shadow-none">Visit Projects</a
+							class="btn bg-circuitry-accent border-none text-white shadow-none">Visit Projects</a
 						>
 					</div>
 				</div>
@@ -126,15 +130,15 @@
 			<div class="card h-84 w-80 bg-[#737373] text-white backdrop-blur-[0.1rem]">
 				<figure class="px-6 pt-6">
 					<img
-						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/logos/club_logo_robo.png"
+						src={`${blobStoreUrl}/images/logos/club_logo_robo.png`}
 						alt="Shoes"
-						class="rounded-xl"
+						class="h-16 rounded-xl bg-white"
 					/>
 				</figure>
 				<div class="card-body items-center text-center">
 					<h2
-						class="robotronics-card-title card-title font-bebas text-4xl tracking-wider md:text-2xl"
-						style:--robotronics-title-text="robotronics-title-text"
+						class="robo-card-title card-title font-bebas text-4xl tracking-wider md:text-2xl"
+						style:--robo-title-text="robo-title-text"
 					>
 						Robotronics
 					</h2>
@@ -187,7 +191,7 @@
 		view-transition-name: var(--circuitry-title-text);
 	}
 
-	.robotronics-card-title {
-		view-transition-name: var(--robotronics-title-text);
+	.robo-card-title {
+		view-transition-name: var(--robo-title-text);
 	}
 </style>

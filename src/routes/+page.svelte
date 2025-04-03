@@ -86,6 +86,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Electrovista | Home</title>
+</svelte:head>
+
 <main class="min-h-screen overflow-x-hidden">
 	<!-- <Splash /> -->
 	<Navbar />

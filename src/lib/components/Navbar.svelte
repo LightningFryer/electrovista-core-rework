@@ -4,6 +4,7 @@
 	import Navrail from './Navrail.svelte';
 	let openNavrailComponent = false;
 	import gsap from 'gsap';
+	import { blobStoreUrl } from '$lib/blobStoreUrl';
 
 	let navBarLogoRotateAnim: GSAPTween;
 
@@ -18,7 +19,9 @@
 	});
 </script>
 
-<nav class="fixed z-20 flex h-20 max-w-screen min-w-screen bg-[#3A6351]/80 shadow-2xl shadow-black">
+<nav
+	class="fixed z-20 flex h-20 max-w-screen min-w-screen justify-between bg-[#3A6351]/80 shadow-2xl shadow-black"
+>
 	<div class="flex flex-col">
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<!-- svelte-ignore a11y_click_events_have_key_events -->
@@ -42,12 +45,19 @@
 				}}
 			>
 				<img
-					src="/src/lib/images/logos/elec_base_logo.png"
+					src={`${blobStoreUrl}/images/logos/elec_base_logo.png`}
 					class="btn btn-circle btn-xl border-[#3A6351] shadow-none"
 					alt="navbar_logo"
 				/>
 			</div>
 		</div>
 		<div><Navrail navrailOpen={openNavrailComponent} /></div>
+	</div>
+	<div>
+		<img
+			src={`${blobStoreUrl}/images/logos/manipal_logo.png`}
+			class="invisible max-h-16 md:visible md:mt-2 md:mr-6"
+			alt="manipal_logo"
+		/>
 	</div>
 </nav>

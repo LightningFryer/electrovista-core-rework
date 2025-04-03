@@ -1,8 +1,13 @@
 <script lang="ts">
+	import { blobStoreUrl } from '$lib/blobStoreUrl';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
 </script>
+
+<svelte:head>
+	<title>Electrovista | Circuitry</title>
+</svelte:head>
 
 <input type="checkbox" id="my_modal_6" class="modal-toggle" />
 <div class="modal" role="dialog">
@@ -26,7 +31,7 @@
 			>
 				<h1 class="font-league-gothic text-5xl md:text-9xl">CIRC</h1>
 				<img
-					src="/src/lib/images/logos/circuitry_base_logo.png"
+					src={`${blobStoreUrl}/images/logos/circuitry_base_logo.png`}
 					class="max-h-20 rounded-full md:max-h-32"
 					alt="es_logo_base"
 				/>
