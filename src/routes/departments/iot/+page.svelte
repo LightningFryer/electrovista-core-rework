@@ -1,8 +1,28 @@
 <script lang="ts">
+	import { blobStoreUrl } from '$lib/blobStoreUrl';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
 </script>
+
+<input type="checkbox" id="robo-proj-1" class="modal-toggle" />
+<div class="modal flex w-full flex-col items-center justify-center" role="dialog">
+	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-7 md:!w-[60%]">
+		<h3 class="font-kanit text-center text-2xl font-bold md:text-4xl">Obstacle avoidance robot</h3>
+		<div class="flex flex-col items-center justify-center gap-y-7">
+			<figure>
+				<video src={`${blobStoreUrl}/videos/robotronics/robo_proj_1_vid.mp4`} muted controls></video>
+			</figure>
+			<p class="font-inria-sans text-2xl">
+				This is a robot that can detect and avoid obstacles in its path using ultrasonic sensors and
+				camera vision.
+			</p>
+		</div>
+		<div class="modal-action">
+			<label for="robo-proj-1" class="btn hover:btn-error">Close!</label>
+		</div>
+	</div>
+</div>
 
 <input type="checkbox" id="my_modal_6" class="modal-toggle" />
 <div class="modal" role="dialog">
@@ -63,7 +83,7 @@
 							actions parts
 						</p>
 						<div class="card-actions justify-end">
-							<label for="my_modal_6" class="btn bg-iot-primary border-none shadow-none"
+							<label for="robo-proj-1" class="btn bg-iot-primary border-none shadow-none"
 								>Read More</label
 							>
 						</div>

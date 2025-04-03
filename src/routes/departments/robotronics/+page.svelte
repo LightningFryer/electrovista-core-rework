@@ -4,6 +4,10 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
+<svelte:head>
+	<title>Electrovista | Robotronics</title>
+</svelte:head>
+
 <input type="checkbox" id="robo_modal_1" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
 	<div class="modal-box flex h-[75%] !w-[60%] !max-w-full flex-col justify-between gap-y-7">
@@ -88,7 +92,7 @@
 			<p>
 				The Self-Balancing System is a two-wheeled robot that stays upright using an Arduino, a
 				gyroscope, and an accelerometer. These sensors detect any tilt, and the Arduino quickly
-				adjusts the motors to counteract the motion, keeping the system balanced. s
+				adjusts the motors to counteract the motion, keeping the system balanced.
 			</p>
 
 			<p>
@@ -137,9 +141,10 @@
 				<div class="card text-robotronics-primary h-[60%] w-[40%] bg-[#d4d4d4]">
 					<div class="card-body">
 						<h2 class="card-title text-3xl">Face Tracker robot</h2>
-						<p>
-							A card component has a figure, a body part, and inside body there are title and
-							actions parts
+						<p class="">
+							The Face Tracker, known as Beans, is a project that detects and follows human faces,
+							adding a more interactive touch to AI-based systems. Unlike the other projects,it
+							relies on OpenCV.
 						</p>
 						<div class="card-actions justify-end">
 							<label for="robo_modal_1" class="btn border-none bg-[#737373] text-white shadow-none"
@@ -153,8 +158,8 @@
 					<div class="card-body">
 						<h2 class="card-title text-3xl">Solar Tracker robot</h2>
 						<p>
-							A card component has a figure, a body part, and inside body there are title and
-							actions parts
+							The Solar Tracker is an automated system designed to maximize the efficiency of solar
+							panels by adjusting their position to follow the sun’s movement.
 						</p>
 						<div class="card-actions justify-end">
 							<label for="robo_modal_2" class="btn border-none bg-[#737373] text-white shadow-none"
@@ -167,8 +172,9 @@
 					<div class="card-body">
 						<h2 class="card-title text-3xl">Light Tracker robot</h2>
 						<p>
-							A card component has a figure, a body part, and inside body there are title and
-							actions parts
+							The Light Tracker is designed to follow a moving light source using an Arduino, two
+							LDRs, and a servo motor. It works by continuously comparing light levels detected by
+							the LDRs and adjusting the servo to turn towards the brighter source.
 						</p>
 						<div class="card-actions justify-end">
 							<label for="robo_modal_3" class="btn border-none bg-[#737373] text-white shadow-none"
@@ -181,8 +187,9 @@
 					<div class="card-body">
 						<h2 class="card-title text-3xl">Self Balancing robot</h2>
 						<p>
-							A card component has a figure, a body part, and inside body there are title and
-							actions parts
+							The Self-Balancing System is a two-wheeled robot that stays upright using an Arduino,
+							a gyroscope, and an accelerometer. These sensors detect any tilt, and the Arduino
+							quickly adjusts the motors to counteract the motion, keeping the system balanced.
 						</p>
 						<div class="card-actions justify-end">
 							<label for="robo_modal_4" class="btn border-none bg-[#737373] text-white shadow-none"

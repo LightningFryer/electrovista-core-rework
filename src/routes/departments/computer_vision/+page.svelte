@@ -1,9 +1,29 @@
 <script lang="ts">
+	import { blobStoreUrl } from '$lib/blobStoreUrl';
 	import type { PageData } from './$types';
 	// import { } from "../../../lib/images/dept_images/cv/thermal_imaging.png"
 
 	let { data }: { data: PageData } = $props();
 </script>
+
+<input type="checkbox" id="cv-proj-1" class="modal-toggle" />
+<div class="modal flex w-full flex-col items-center justify-center" role="dialog">
+	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-7 md:!w-[60%]">
+		<h3 class="font-kanit text-center text-2xl font-bold md:text-4xl">Obstacle avoidance robot</h3>
+		<div class="flex flex-col items-center justify-center gap-y-7">
+			<figure>
+				<video src={`${blobStoreUrl}/videos/cv/cv_proj_1_vid.mp4`} controls></video>
+			</figure>
+			<p class="font-inria-sans text-2xl">
+				This is a robot that can detect and avoid obstacles in its path using ultrasonic sensors and
+				camera vision.
+			</p>
+		</div>
+		<div class="modal-action">
+			<label for="cv-proj-1" class="btn hover:btn-error">Close!</label>
+		</div>
+	</div>
+</div>
 
 <input type="checkbox" id="cv-proj-2" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
@@ -121,9 +141,9 @@
 							actions parts
 						</p>
 						<div class="card-actions justify-end">
-							<!-- <label for="cv-proj-2" class="btn bg-cv-primary border-none shadow-none text-white"
+							<label for="cv-proj-1" class="btn bg-cv-primary border-none text-white shadow-none"
 								>Read More</label
-							> -->
+							>
 						</div>
 					</div>
 				</div>
@@ -132,8 +152,8 @@
 					<div class="card-body">
 						<h2 class="card-title text-3xl">Objection Detection using Thermal Imaging Camera</h2>
 						<p>
-							A card component has a figure, a body part, and inside body there are title and
-							actions parts
+							This is a robot that can detect and avoid obstacles in its path using ultrasonic
+							sensors and camera vision.
 						</p>
 						<div class="card-actions justify-end">
 							<label for="cv-proj-2" class="btn bg-cv-primary border-none text-white shadow-none"

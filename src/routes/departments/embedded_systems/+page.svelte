@@ -4,13 +4,79 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
-<input type="checkbox" id="my_modal_6" class="modal-toggle" />
-<div class="modal" role="dialog">
-	<div class="modal-box">
-		<h3 class="text-lg font-bold">Hello!</h3>
-		<p class="py-4">This modal works with a hidden checkbox!</p>
+<input type="checkbox" id="es_modal_2" class="modal-toggle" />
+<div class="modal flex w-full flex-col items-center justify-center" role="dialog">
+	<div class="modal-box flex h-[75%] !w-[60%] !max-w-full flex-col justify-between gap-y-4">
+		<h3 class="font-kanit text-center text-4xl font-bold">
+			Hardware-Assisted Encryption for Resource-Constrained Devices
+		</h3>
+		<div class="font-inria-sans flex flex-col gap-y-5 text-2xl">
+			<p>
+				Our hardware encryption solution implements AES-256 for resource-constrained environments,
+				utilizing dedicated hardware acceleration to offload cryptographic operations from host
+				systems
+			</p>
+
+			<h3 class="font-kanit text-center text-2xl font-semibold">Architecture Overview</h3>
+
+			<p>
+				The device employs a heterogeneous computing architecture combining an STM32 F401RE NUCLEO
+				microcontroller with a Xilinx Artix-7 Nexys A7-50T FPGA module, all housed in a Gavin's
+				Hooli box-styled encasement. This configuration provides superior performance compared to
+				software-based encryption solutions while maintaining minimal power consumption
+			</p>
+
+			<h3 class="font-kanit text-center text-2xl font-semibold">Technical Implementation</h3>
+			<p class="">Hardware Components</p>
+			<ul class="list-disc p-6">
+				<li class="text-lg">
+					<span class="font-semibold">STM32 F401RE NUCLEO MCU</span>: Manages control flow and I/O
+					operations
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Xilinx Artix-7 Nexys A7-50T FPGA</span>: Implements dedicated
+					cryptographic processing units
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">STM32 F401RE NUCLEO MCU</span>: Manages control flow and I/O
+					operations
+				</li>
+			</ul>
+
+			<p class="">Encryption Pipeline</p>
+			<ul class="list-disc p-6">
+				<li class="text-lg">
+					<span class="font-semibold">Key Expansion Unit</span>: Generates round keys using
+					non-linear S-box transformations
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">SubBytes Operation</span>: Implements lookup table (LUT) based
+					substitution for optimal timing
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">ShiftRows/MixColumns</span>: Utilizes parallel processing with
+					register transfer level (RTL) optimizations
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">AddRoundKey</span>: Performs bitwise XOR operations between
+					state and round key
+				</li>
+			</ul>
+			<p>
+				The design leverages SystemVerilog parameterized modules with clock domain crossing (CDC)
+				synchronizers to ensure reliable data transfer between the MCU and FPGA domains.
+			</p>
+
+			<p class="">Encryption Pipeline</p>
+			<ul class="list-disc p-6">
+				<li>Hardware-isolated key storage prevents exposure to software vulnerabilities</li>
+				<li>Side-channel attack countermeasures including constant-time operations</li>
+				<li>Physical tamper detection circuitry with automatic key zeroization</li>
+				<li>True hardware random number generator (TRNG) for key generation</li>
+			</ul>
+		</div>
 		<div class="modal-action">
-			<label for="my_modal_6" class="btn">Close!</label>
+			<label for="es_modal_2" class="btn hover:btn-error">Close!</label>
 		</div>
 	</div>
 </div>
@@ -83,7 +149,9 @@
 							actions parts
 						</p>
 						<div class="card-actions justify-end">
-							<button class="btn bg-es-primary border-none shadow-none">Read More!</button>
+							<label for="es_modal_2" class="btn bg-es-primary border-none shadow-none"
+								>Read More</label
+							>
 						</div>
 					</div>
 				</div>

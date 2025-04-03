@@ -1,4 +1,5 @@
 <script>
+	import { blobStoreUrl } from '$lib/blobStoreUrl';
 	import gsap from 'gsap';
 	import { onMount } from 'svelte';
 	onMount(() => {
@@ -33,19 +34,23 @@
 >
 	<div class="text-default-text mt-20 flex h-full w-full flex-col items-center justify-center">
 		<div class="flex flex-row items-center justify-center">
-			<h1 class="elec-main-text font-league-gothic ml-20 text-[10rem] font-semibold text-white">
+			<h1
+				class="elec-main-text font-league-gothic text-[4rem] font-semibold text-white md:ml-20 md:text-[10rem]"
+			>
 				ELECTR
 			</h1>
 			<!-- This div is to add space between the ELECTRO, LOGO, VISTA-->
-			<div class="mr-20 ml-20"></div>
+			<div class="mr-10 ml-10 md:mr-20 md:ml-20"></div>
 
 			<img
-				src="/src/lib/images/logos/elec_base_logo.png"
+				src={`${blobStoreUrl}/images/logos/elec_base_logo.png`}
 				alt="electrovista_logo"
-				class="landing-main-logo absolute z-10 h-80 opacity-0"
+				class="landing-main-logo absolute z-10 mb-3 ml-4 h-32 overflow-scroll opacity-0 md:mb-3 md:ml-0 md:h-80"
 			/>
 
-			<h1 class="elec-main-text font-league-gothic mr-[7rem] text-[10rem] font-semibold text-white">
+			<h1
+				class="elec-main-text font-league-gothic text-[4rem] font-semibold text-white md:mr-[7rem] md:text-[10rem]"
+			>
 				VISTA!
 			</h1>
 		</div>

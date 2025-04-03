@@ -4,6 +4,7 @@
 	import Splash from '$lib/components/Splash.svelte';
 	import Departments from '$lib/sections/Departments.svelte';
 	import Landing from '$lib/sections/Landing.svelte';
+	import MeetTheTeam from '$lib/sections/MeetTheTeam.svelte';
 
 	import gsap from 'gsap';
 	import { onMount } from 'svelte';
@@ -90,5 +91,6 @@
 	<Navbar />
 	<Navrail />
 	<Landing />
-    <Departments />
+	<Departments />
+	<MeetTheTeam />
 </main>

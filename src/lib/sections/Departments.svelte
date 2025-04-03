@@ -95,6 +95,34 @@
 				</div>
 			</div>
 
+			<div class="card bg-circuitry-primary h-84 w-80 text-white backdrop-blur-[0.1rem]">
+				<figure class="px-6 pt-6">
+					<img
+						src="https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/electrovista_core_images/images/logos/club_logo_iot.png"
+						alt="Shoes"
+						class="rounded-xl"
+					/>
+				</figure>
+				<div class="card-body items-center text-center">
+					<h2
+						class="circuitry-card-title card-title font-bebas text-4xl tracking-wider md:text-2xl"
+						style:--circuitry-title-text="circuitry-title-text"
+					>
+						Circuitry
+					</h2>
+					<p>
+						A card component has a figure, a body part, and inside body there are title and actions
+						parts
+					</p>
+					<div class="card-actions">
+						<a
+							href="departments/circuitry"
+							class="btn border-none bg-circuitry-accent text-white shadow-none">Visit Projects</a
+						>
+					</div>
+				</div>
+			</div>
+
 			<div class="card h-84 w-80 bg-[#737373] text-white backdrop-blur-[0.1rem]">
 				<figure class="px-6 pt-6">
 					<img
