@@ -16,7 +16,8 @@
 		<h3 class="font-kanit text-center text-2xl font-bold md:text-4xl">Obstacle avoidance robot</h3>
 		<div class="flex flex-col items-center justify-center gap-y-7">
 			<figure>
-				<video src={`${blobStoreUrl}/videos/cv/cv_proj_1_vid.mp4`} controls></video>
+				<video src={`${blobStoreUrl}/videos/cv/cv_proj_1_vid.mp4`} controls class="md:h-full"
+				></video>
 			</figure>
 			<p class="font-inria-sans text-2xl">
 				This is a robot that can detect and avoid obstacles in its path using ultrasonic sensors and
@@ -84,46 +85,48 @@
 			<a
 				href="https://www.tinkercad.com/things/4zaomXCqKvE/editel?sharecode=mJMEkcDn2BVW9ZeP65ccdaxq-RHERdvDQ2FF3fTezlk"
 				target="_blank"
-				class="btn bg-[#3A6351] p-5 text-2xl text-white hover:bg-[#3A6351]/90"
+				class="btn bg-[#3A6351] py-5 text-white hover:bg-[#3A6351]/90 md:text-2xl"
 				>Find out more about this simulation here</a
 			>
 			<p class="font-kanit text-left text-2xl font-semibold">Components Comparison</p>
-			<table class="table md:w-auto">
-				<thead>
-					<tr class="">
-						<th class="">Components</th>
-						<th class="">Simulation model</th>
-						<th class="">Real-world model</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="">Microcontroller</td>
-						<td class="">Arduino Uno3</td>
-						<td class="">Raspberry Pi4</td>
-					</tr>
-					<tr>
-						<td class="">Temperature sensor</td>
-						<td class="">TMP36 (simulated)</td>
-						<td class="">MLX90640 (thermal imaging sensor)</td>
-					</tr>
-					<tr>
-						<td class="">Display</td>
-						<td class="">16x2 LCD (non-I2C)</td>
-						<td class="">Laptop display</td>
-					</tr>
-					<tr>
-						<td class="">Cooling system</td>
-						<td class="">Not required</td>
-						<td class="">Heat sink and fan for Raspberry Pi</td>
-					</tr>
-					<tr>
-						<td class="">Power supply</td>
-						<td class="">Simulated 5V from Arduino</td>
-						<td class="">5V USB-C adapter for Raspberry Pi</td>
-					</tr>
-				</tbody>
-			</table>
+			<div class="">
+				<table class="table">
+					<thead class="">
+						<tr class="text-xs">
+							<th class="">Components</th>
+							<th class="">Simulation model</th>
+							<th class="">Real-world model</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="text-xs">
+							<td class="">Microcontroller</td>
+							<td class="">Arduino Uno3</td>
+							<td class="">Raspberry Pi4</td>
+						</tr>
+						<tr class="text-xs">
+							<td class="">Temperature sensor</td>
+							<td class="">TMP36 (simulated)</td>
+							<td class="">MLX90640 (thermal imaging sensor)</td>
+						</tr>
+						<tr class="text-xs">
+							<td class="">Display</td>
+							<td class="">16x2 LCD (non-I2C)</td>
+							<td class="">Laptop display</td>
+						</tr>
+						<tr class="text-xs">
+							<td class="">Cooling system</td>
+							<td class="">Not required</td>
+							<td class="">Heat sink and fan for Raspberry Pi</td>
+						</tr>
+						<tr class="text-xs">
+							<td class="">Power supply</td>
+							<td class="">Simulated 5V from Arduino</td>
+							<td class="">5V USB-C adapter for Raspberry Pi</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
 			<p class="font-kanit text-left text-2xl font-semibold">Simulation Components</p>
 			<ul class="list-disc p-6">
@@ -197,13 +200,13 @@
 		<div class="font-inria-sans flex flex-col items-center justify-center gap-y-7">
 			<img
 				src={`${blobStoreUrl}/images/dept_images/cv/cv-proj-3.png`}
-				class="h-[26rem]"
+				class="md:h-[26rem]"
 				alt="thermal_imaging"
 			/>
 			<a
 				href="https://www.tinkercad.com/things/id9DlXaa2Zo-gesture-control-simulation/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard&sharecode=0JXSgxLohKDK9rw4TkHF2HQ5sljCF3oLptvVVn0EPuU"
 				target="_blank"
-				class="btn bg-[#3A6351] p-5 text-2xl text-white hover:bg-[#3A6351]/90"
+				class="btn bg-[#3A6351] py-5 text-white hover:bg-[#3A6351]/90 md:text-2xl"
 				>Find out more about this simulation here</a
 			>
 			<p class="text-lg">
@@ -311,13 +314,13 @@
 		<div class="flex flex-col items-center justify-center gap-y-7">
 			<img
 				src={`${blobStoreUrl}/images/dept_images/cv/cv-proj-4.png`}
-				class="h-[26rem]"
+				class="md:h-[26rem]"
 				alt="thermal_imaging"
 			/>
 			<a
 				href="https://www.tinkercad.com/things/gU26ZlUNKoE-powerful-leelo-gaaris?sharecode=lY8w-XzHrQkRxMLgXN1QJEOO1JFryehTrLEa-6vnPnk"
 				target="_blank"
-				class="btn bg-[#3A6351] p-5 text-2xl text-white hover:bg-[#3A6351]/90"
+				class="btn bg-[#3A6351] py-5 text-white hover:bg-[#3A6351]/90 md:text-2xl"
 				>Find out more about this simulation here</a
 			>
 			<p class="font-kanit text-left text-2xl font-semibold">Workflow</p>

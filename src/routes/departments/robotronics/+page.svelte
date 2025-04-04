@@ -36,7 +36,7 @@
 
 <input type="checkbox" id="robo_modal_2" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
-	<div class="modal-box flex h-[75%] !w-[60%] !max-w-full flex-col justify-between gap-y-7">
+	<div class="modal-box flex h-[95%] !w-[60%] !max-w-full flex-col justify-between gap-y-7">
 		<h3 class="font-kanit text-center text-4xl font-bold">Solar Tracker robot</h3>
 		<div class="font-inria-sans flex flex-col gap-y-5 text-2xl">
 			<p>
@@ -47,7 +47,7 @@
 				absorption compared to fixed panels, making it an effective solution for small-scale
 				renewable energy systems.
 			</p>
-
+			<img src={`${blobStoreUrl}/images/dept_images/robotronics/robo-proj-2.jpg`} alt="" />
 			<p>
 				The system continuously adjusts throughout the day, ensuring optimal alignment with the sun.
 				To improve performance, additional features like dual-axis tracking can be implemented,
@@ -71,7 +71,7 @@
 				adjusting the servo to turn towards the brighter source. This simple yet effective mechanism
 				enables the system to track a flashlight, laser pointer, or any other moving light.
 			</p>
-
+			<img src={`${blobStoreUrl}/images/dept_images/robotronics/robo-proj-3.jpg`} alt="" />
 			<p>
 				The system functions similarly to the solar tracker but is more responsive to rapid changes
 				in light direction. It can be used in autonomous robots that navigate towards light,

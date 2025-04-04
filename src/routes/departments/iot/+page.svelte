@@ -18,9 +18,20 @@
 				<video src={`${blobStoreUrl}/videos/robotronics/robo_proj_1_vid.mp4`} muted controls
 				></video>
 			</figure>
+			<h3 class="font-kanit text-2xl font-semibold">Circuit Diagram</h3>
+			<img src={`${blobStoreUrl}/images/dept_images/iot/iot-proj-1.jpg`} alt="" />
 			<p class="font-inria-sans text-2xl">
 				This is a robot that can detect and avoid obstacles in its path using ultrasonic sensors and
 				camera vision.
+			</p>
+			<p class="font-inria-sans text-2xl">
+				The ESP32-based Bionic Arm is a gesture-controlled robotic arm designed to mimic human hand
+				movements using flex sensors and an MPU6050 IMU sensor. The system utilizes an ESP32
+				microcontroller to process sensor data and control servo motors via a PCA9685 servo driver.
+				Five flex sensors detect finger bending, while the MPU6050 tracks wrist orientation,
+				enabling real-time movement of the robotic fingers and wrist. The ESP32 interprets these
+				inputs and sends appropriate PWM signals to the servos, ensuring smooth and accurate motion
+				replication.
 			</p>
 		</div>
 		<div class="modal-action">
@@ -91,21 +102,6 @@
 							<label for="robo-proj-1" class="btn bg-iot-primary border-none shadow-none"
 								>Read More</label
 							>
-						</div>
-					</div>
-				</div>
-
-				<div class="card bg-iot-accent md:h-[60%] md:w-[40%]">
-					<div class="card-body">
-						<h2 class="card-title text-3xl">
-							Hardware-Assisted Encryption for Resource-Constrained Devices
-						</h2>
-						<p>
-							A card component has a figure, a body part, and inside body there are title and
-							actions parts
-						</p>
-						<div class="card-actions justify-end">
-							<button class="btn bg-iot-primary border-none shadow-none">Read More!</button>
 						</div>
 					</div>
 				</div>
