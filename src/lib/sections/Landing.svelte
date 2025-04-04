@@ -2,6 +2,7 @@
 	import { blobStoreUrl } from '$lib/blobStoreUrl';
 	import gsap from 'gsap';
 	import { onMount } from 'svelte';
+
 	onMount(() => {
 		gsap
 			.from('.elec-main-text', {
@@ -31,6 +32,7 @@
 
 <main
 	class="dotted-background-wrapper flex h-screen flex-col items-center justify-center !bg-[#171717]"
+	id="landing-sec"
 >
 	<div class="text-default-text mt-20 flex h-full w-full flex-col items-center justify-center">
 		<div class="flex flex-row items-center justify-center">
@@ -56,6 +58,7 @@
 		</div>
 
 		<button
+			onclick={scrollToDept}
 			class="btn btn-lg font-kanit mt-12 cursor-pointer rounded-full font-light shadow-none hover:border-[#3A6351] hover:bg-[#3A6351] hover:text-white"
 			>Scroll on to see more!</button
 		>

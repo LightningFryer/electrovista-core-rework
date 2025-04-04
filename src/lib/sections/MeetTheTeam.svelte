@@ -22,6 +22,7 @@
 
 <main
 	class="dotted-background-wrapper flex min-h-screen flex-col items-center justify-center !bg-[#171717]"
+	id="team-sec"
 >
 	<div class="meet-the-team-text-trigger flex min-h-[100vh] w-[90%] flex-col gap-y-10 text-center">
 		<h1 class="meet-the-team-card-elements font-league-gothic text-7xl text-white md:text-9xl">

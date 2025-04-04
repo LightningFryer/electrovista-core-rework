@@ -23,6 +23,7 @@
 
 <main
 	class="dotted-background-wrapper flex min-h-screen flex-col items-center justify-center !bg-[#171717]"
+	id="dept-sec"
 >
 	<div class="flex h-[90%] w-[95%] flex-col">
 		<div class="dept-welcome-text-trigger mt-16 mb-12">
