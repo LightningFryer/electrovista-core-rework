@@ -30,6 +30,7 @@
 	},
 	"dependencies": {
 		"electrovista-core-rework": "file:",
-		"gsap": "^3.12.7"
+		"gsap": "^3.12.7",
+		"lucide-svelte": "^0.487.0"
 	}
 }

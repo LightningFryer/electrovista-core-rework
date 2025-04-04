@@ -1,22 +1,49 @@
 <script>
 	import { blobStoreUrl } from '$lib/blobStoreUrl';
+	import { onMount } from 'svelte';
+
+	import gsap from 'gsap';
+	import { ScrollTrigger } from 'gsap/ScrollTrigger';
+	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger);
+		gsap.from('.dept-card-elements', {
+			duration: 0.6,
+			opacity: 0,
+			yPercent: 100,
+			stagger: 0.2,
+			paused: true,
+			scrollTrigger: {
+				trigger: '.dept-welcome-text-trigger',
+				// markers: true,
+				start: 'top 60%'
+			}
+		});
+	});
 </script>
 
 <main
 	class="dotted-background-wrapper flex min-h-screen flex-col items-center justify-center !bg-[#171717]"
 >
 	<div class="flex h-[90%] w-[95%] flex-col">
-		<div class="mt-16 mb-12">
-			<h1 id="dept-welcome-text" class="font-bebas text-center text-7xl text-white">
+		<div class="dept-welcome-text-trigger mt-16 mb-12">
+			<h1
+				id="dept-welcome-text"
+				class="dept-card-elements font-bebas text-center text-7xl text-white"
+			>
 				Check out our
 			</h1>
-			<h1 id="dept-welcome-text" class="font-bebas text-center text-7xl text-white">Departments</h1>
+			<h1
+				id="dept-welcome-text"
+				class="dept-card-elements font-bebas text-center text-7xl text-white"
+			>
+				Departments
+			</h1>
 		</div>
 
 		<div
 			class="flex grow flex-col items-center justify-center gap-y-10 pb-12 md:flex-row md:gap-x-6 md:pb-0"
 		>
-			<div class="card bg-es-primary h-84 w-80 text-white backdrop-blur-[0.1rem]">
+			<div class="card dept-card-elements bg-es-primary h-84 w-80 text-white">
 				<figure class="px-6 pt-6">
 					<img
 						src={`${blobStoreUrl}/images/logos/club_logo_es.png`}
@@ -44,7 +71,7 @@
 				</div>
 			</div>
 
-			<div class="card h-84 w-80 bg-[#38b6ff] text-white backdrop-blur-[0.1rem]">
+			<div class="card dept-card-elements h-84 w-80 bg-[#38b6ff] text-white">
 				<figure class="px-6 pt-6">
 					<img
 						src={`${blobStoreUrl}/images/logos/club_logo_iot.png`}
@@ -71,7 +98,7 @@
 				</div>
 			</div>
 
-			<div class="card h-84 w-80 bg-[#4f2882] text-white backdrop-blur-[0.1rem]">
+			<div class="card dept-card-elements h-84 w-80 bg-[#4f2882] text-white">
 				<figure class="px-6 pt-6">
 					<img
 						src={`${blobStoreUrl}/images/logos/club_logo_cv.png`}
@@ -99,7 +126,7 @@
 				</div>
 			</div>
 
-			<div class="card bg-circuitry-primary h-84 w-80 text-white backdrop-blur-[0.1rem]">
+			<div class="card dept-card-elements bg-circuitry-primary h-84 w-80 text-white">
 				<figure class="px-6 pt-6">
 					<img
 						src={`${blobStoreUrl}/images/logos/club_logo_circuitry.png`}
@@ -127,7 +154,7 @@
 				</div>
 			</div>
 
-			<div class="card h-84 w-80 bg-[#737373] text-white backdrop-blur-[0.1rem]">
+			<div class="card dept-card-elements h-84 w-80 bg-[#737373] text-white">
 				<figure class="px-6 pt-6">
 					<img
 						src={`${blobStoreUrl}/images/logos/club_logo_robo.png`}
