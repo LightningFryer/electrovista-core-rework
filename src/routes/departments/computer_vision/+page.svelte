@@ -418,10 +418,10 @@
 		</div>
 
 		<div class="flex min-h-screen flex-col gap-y-2 md:h-screen">
-			<h1 class="font-bebas pt-12 pb-0 pl-12 text-6xl">Our Projects</h1>
+			<h1 class="font-bebas pt-12 pb-0 text-center text-8xl">Our Projects</h1>
 
 			<div
-				class="flex w-full grow flex-col items-center justify-center gap-x-4 gap-y-10 p-5 md:flex-row md:gap-y-0 md:p-6"
+				class="flex w-full grow flex-col items-center justify-center gap-y-10 p-5 md:flex-row md:gap-x-4 md:gap-y-0"
 			>
 				<div class="card bg-cv-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">

@@ -11,7 +11,7 @@
 
 <input type="checkbox" id="es_modal_2" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
-	<div class="modal-box flex h-[75%] !w-[60%] !max-w-full flex-col justify-between gap-y-4">
+	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-7 md:!w-[60%]">
 		<h3 class="font-kanit text-center text-4xl font-bold">
 			Hardware-Assisted Encryption for Resource-Constrained Devices
 		</h3>

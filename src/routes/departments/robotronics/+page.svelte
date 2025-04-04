@@ -11,7 +11,7 @@
 
 <input type="checkbox" id="robo_modal_1" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
-	<div class="modal-box flex h-[75%] !w-[60%] !max-w-full flex-col justify-between gap-y-7">
+	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-4 md:!w-[60%]">
 		<h3 class="font-kanit text-center text-4xl font-bold">Face Tracker robot</h3>
 		<div class="font-inria-sans flex flex-col gap-y-5 text-2xl">
 			<p>
@@ -20,7 +20,7 @@
 				The camera captures video input, a face detection algorithm finds a person’s face, and the
 				system moves the servos accordingly to keep the face centered in view.
 			</p>
-
+			<img src={`${blobStoreUrl}/images/dept_images/robotronics/robo-proj-1.jpg`} alt="" />
 			<p>
 				This project makes AI seem more engaging and lifelike, perfect for interactive robotics,
 				assistive devices, or fun tech demonstrations. Future improvements could include expression
@@ -36,7 +36,7 @@
 
 <input type="checkbox" id="robo_modal_2" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
-	<div class="modal-box flex h-[95%] !w-[60%] !max-w-full flex-col justify-between gap-y-7">
+	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-4 md:!w-[60%]">
 		<h3 class="font-kanit text-center text-4xl font-bold">Solar Tracker robot</h3>
 		<div class="font-inria-sans flex flex-col gap-y-5 text-2xl">
 			<p>
@@ -62,7 +62,7 @@
 
 <input type="checkbox" id="robo_modal_3" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
-	<div class="modal-box flex h-[75%] !w-[60%] !max-w-full flex-col justify-between gap-y-7">
+	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-4 md:!w-[60%]">
 		<h3 class="font-kanit text-center text-4xl font-bold">Light Tracker robot</h3>
 		<div class="font-inria-sans flex flex-col gap-y-5 text-2xl">
 			<p>
@@ -87,7 +87,7 @@
 
 <input type="checkbox" id="robo_modal_4" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
-	<div class="modal-box flex h-[75%] !w-[60%] !max-w-full flex-col justify-between gap-y-7">
+	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-4 md:!w-[60%]">
 		<h3 class="font-kanit text-center text-4xl font-bold">Self Balancing robot</h3>
 		<div class="font-inria-sans flex flex-col gap-y-5 text-2xl">
 			<p>
@@ -142,10 +142,12 @@
 			</div>
 		</div>
 
-		<div class="flex h-screen flex-col gap-y-2">
+		<div class="flex min-h-screen flex-col gap-y-2 md:h-screen">
 			<h1 class="font-bebas pt-12 pb-0 pl-12 text-6xl">Our Projects</h1>
-			<div class="flex w-full grow flex-row items-center justify-center gap-x-4 p-6">
-				<div class="card text-robotronics-primary h-[60%] w-[40%] bg-[#d4d4d4]">
+			<div
+				class="flex w-full grow flex-col items-center justify-center gap-x-4 gap-y-10 p-5 md:flex-row md:gap-y-0 md:p-6"
+			>
+				<div class="card text-robotronics-primary bg-[#d4d4d4] md:h-[60%] md:w-[40%]">
 					<div class="card-body">
 						<h2 class="card-title text-3xl">Face Tracker robot</h2>
 						<p class="">
@@ -161,7 +163,7 @@
 					</div>
 				</div>
 
-				<div class="card text-robotronics-primary h-[60%] w-[40%] bg-[#d4d4d4]">
+				<div class="card text-robotronics-primary bg-[#d4d4d4] md:h-[60%] md:w-[40%]">
 					<div class="card-body">
 						<h2 class="card-title text-3xl">Solar Tracker robot</h2>
 						<p>
@@ -175,7 +177,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card text-robotronics-primary h-[60%] w-[40%] bg-[#d4d4d4]">
+				<div class="card text-robotronics-primary bg-[#d4d4d4] md:h-[60%] md:w-[40%]">
 					<div class="card-body">
 						<h2 class="card-title text-3xl">Light Tracker robot</h2>
 						<p>
@@ -190,7 +192,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card text-robotronics-primary h-[60%] w-[40%] bg-[#d4d4d4]">
+				<div class="card text-robotronics-primary bg-[#d4d4d4] md:h-[60%] md:w-[40%]">
 					<div class="card-body">
 						<h2 class="card-title text-3xl">Self Balancing robot</h2>
 						<p>
