@@ -406,14 +406,11 @@
 			<div class="flex flex-col items-center gap-y-2">
 				<h2 class="font-pixelify text-3xl font-bold">Project Head</h2>
 				<div class="avatar">
-					<div class="ring-offset-cv-primary w-24 rounded-full ring-4 ring-white ring-offset-2">
-						<img
-							src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-							alt="cv_dept_head"
-						/>
+					<div class="ring-offset-cv-primary w-36 rounded-full ring-4 ring-white ring-offset-2">
+						<img src={`${blobStoreUrl}/images/team/mahaswetha.png`} alt="cv_dept_head" />
 					</div>
 				</div>
-				<p class="font-inria-sans text-2xl font-bold">Mahaswetha S</p>
+				<p class="font-inria-sans text-3xl font-bold">Mahaswetha S</p>
 			</div>
 		</div>
 

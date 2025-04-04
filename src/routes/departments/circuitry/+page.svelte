@@ -64,15 +64,12 @@
 				<h2 class="font-pixelify text-3xl font-bold">Project Head</h2>
 				<div class="avatar">
 					<div
-						class="ring-circuitry-accent ring-offset-circuitry-primary w-24 rounded-full ring-4 ring-offset-2"
+						class="ring-circuitry-accent ring-offset-circuitry-primary w-36 rounded-full ring-4 ring-offset-2"
 					>
-						<img
-							src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-							alt="robotronics_dept_head"
-						/>
+						<img src={`${blobStoreUrl}/images/team/dheeraj.png`} alt="robotronics_dept_head" />
 					</div>
 				</div>
-				<p class="font-inria-sans text-2xl font-bold">Sumedh Prabhudeshai</p>
+				<p class="font-inria-sans text-3xl font-bold">Sumedh Prabhudeshai</p>
 			</div>
 		</div>
 
