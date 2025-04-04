@@ -60,13 +60,13 @@
 				style:--iot-title-text="iot-title-text"
 				class="iot-card-title bg-iot-accent/85 flex w-full flex-row items-center justify-center p-4 text-white"
 			>
-				<h1 class="font-league-gothic text-5xl md:text-9xl">INTERNET</h1>
+				<h1 class="font-league-gothic text-4xl md:text-9xl">INTERNET</h1>
 				<img
 					src={`${blobStoreUrl}/images/logos/iot_base_logo.png`}
 					class="max-h-20 rounded-full md:max-h-28"
 					alt="es_logo_base"
 				/>
-				<h1 class="font-league-gothic text-5xl md:text-9xl">OF THINGS</h1>
+				<h1 class="font-league-gothic text-4xl md:text-9xl">OF THINGS</h1>
 			</div>
 		</div>
 
@@ -86,7 +86,7 @@
 		</div>
 
 		<div class="flex min-h-screen flex-col gap-y-2 md:h-screen">
-			<h1 class="font-bebas pt-12 pb-0 pl-12 text-6xl">Our Projects</h1>
+			<h1 class="font-bebas pt-12 pb-0 text-center text-7xl md:text-8xl">Our Projects</h1>
 
 			<div
 				class="flex w-full grow flex-col items-center justify-center gap-x-4 gap-y-10 p-5 md:flex-row md:gap-y-0 md:p-6"

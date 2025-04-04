@@ -28,13 +28,13 @@
 		<div class="dept-welcome-text-trigger mt-16 mb-12">
 			<h1
 				id="dept-welcome-text"
-				class="dept-card-elements font-bebas text-center text-7xl text-white"
+				class="dept-card-elements font-bebas text-center text-8xl text-white"
 			>
 				Check out our
 			</h1>
 			<h1
 				id="dept-welcome-text"
-				class="dept-card-elements font-bebas text-center text-7xl text-white"
+				class="dept-card-elements font-bebas text-center text-7xl text-yellow-300"
 			>
 				Departments
 			</h1>
