@@ -79,7 +79,7 @@
 		</h2>
 
 		<div
-			class="col-auto grid grow grid-cols-1 items-center justify-center gap-y-6 p-6 md:grid-cols-5 md:gap-x-6 md:gap-y-4"
+			class="grid grow grid-cols-1 place-items-center gap-y-6 p-6 md:grid-cols-5 md:gap-x-6 md:gap-y-4"
 		>
 			<div
 				class="card meet-the-team-card-elements h-[20rem] w-[16rem] bg-[#3A6351]/50 text-white shadow-sm backdrop-blur-[0.1rem]"
