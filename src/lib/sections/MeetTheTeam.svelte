@@ -25,14 +25,16 @@
 >
 	<div class="meet-the-team-text-trigger flex min-h-[100vh] w-[90%] flex-col gap-y-10 text-center">
 		<h1 class="meet-the-team-card-elements font-league-gothic text-7xl text-white md:text-9xl">
-			MEET OUR <span class="text-yellow-300">ELECTRIC</span> TEAM
+			MEET OUR TEAM
 		</h1>
-		<h2 class="meet-the-team-card-elements font-league-gothic text-white md:text-6xl">
+		<h2 class="meet-the-team-card-elements font-league-gothic text-5xl text-white md:text-6xl">
 			Faculty Advisors
 		</h2>
-		<div class="flex flex-row items-center justify-center gap-x-5">
+		<div
+			class="flex flex-col items-center justify-center gap-y-12 md:flex-row md:gap-x-5 md:gap-y-0"
+		>
 			<div
-				class="card meet-the-team-card-elements flex h-[30rem] w-[40rem] flex-col items-center justify-center bg-[#3A6351]/50 text-white shadow-sm backdrop-blur-[0.1rem]"
+				class="card meet-the-team-card-elements flex flex-col items-center justify-center bg-[#3A6351]/50 text-white shadow-sm backdrop-blur-[0.1rem] md:h-[30rem] md:w-[40rem]"
 			>
 				<figure class="px-10 pt-10">
 					<div class="avatar">
@@ -42,8 +44,8 @@
 					</div>
 				</figure>
 				<div class="card-body items-center text-center">
-					<h2 class="card-title font-kanit text-5xl">Dr. Shwetha M</h2>
-					<p class="font-inria-sans text-2xl">
+					<h2 class="card-title font-kanit text-3xl md:text-5xl">Dr. Shwetha M</h2>
+					<p class="font-inria-sans text-lg md:text-2xl">
 						Assistant Professor – Senior Scale Department of Electronics & Communications
 					</p>
 					<!-- <div class="card-actions">
@@ -52,7 +54,7 @@
 				</div>
 			</div>
 			<div
-				class="card meet-the-team-card-elements flex h-[30rem] w-[40rem] flex-col items-center justify-center bg-[#3A6351]/50 text-white shadow-sm backdrop-blur-[0.1rem]"
+				class="card meet-the-team-card-elements flex flex-col items-center justify-center bg-[#3A6351]/50 text-white shadow-sm backdrop-blur-[0.1rem] md:h-[30rem] md:w-[40rem]"
 			>
 				<figure class="px-10 pt-10">
 					<div class="avatar">
@@ -62,8 +64,8 @@
 					</div>
 				</figure>
 				<div class="card-body items-center text-center">
-					<h2 class="card-title font-kanit text-4xl">Dr. Soumya Sundar Pattanayak</h2>
-					<p class="font-inria-sans text-2xl">
+					<h2 class="card-title font-kanit text-3xl md:text-4xl">Dr. Soumya Sundar Pattanayak</h2>
+					<p class="font-inria-sans text-lg md:text-2xl">
 						Assistant Professor Department of Electronics & Communications
 					</p>
 					<!-- <div class="card-actions">
@@ -72,9 +74,10 @@
 				</div>
 			</div>
 		</div>
-		<h2 class="meet-the-team-card-elements font-league-gothic text-white md:text-6xl">
+		<h2 class="meet-the-team-card-elements font-league-gothic text-5xl text-white md:text-6xl">
 			Core Committee
 		</h2>
+
 		<div
 			class="col-auto grid grow grid-cols-1 items-center justify-center gap-y-6 p-6 md:grid-cols-5 md:gap-x-6 md:gap-y-4"
 		>
@@ -247,17 +250,104 @@
 				<figure class="px-10 pt-10">
 					<div class="avatar">
 						<div class="w-32 rounded-full">
-							<img src={`${blobStoreUrl}/images/team/sreelakshmi.pn`} alt="" />
+							<img
+								src={`https://v1a3dpktdo3ogcjf.public.blob.vercel-storage.com/images/team_card_images/mahadev_team_card.avif`}
+								alt=""
+							/>
 						</div>
 					</div>
 				</figure>
 				<div class="card-body items-center text-center">
-					<h2 class="card-title font-kanit text-3xl">Sree lakshmi</h2>
-					<p class="font-inria-sans text-xl">Logistics</p>
+					<h2 class="card-title font-kanit text-3xl">Mahadev</h2>
+					<p class="font-inria-sans text-xl">Webmaster</p>
 					<!-- <div class="card-actions">
 						<button class="btn">Know more</button>
 					</div> -->
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="meet-the-team-card-elements font-league-gothic p-4 text-5xl text-white md:text-6xl">
+		Core Committee Heads
+	</h2>
+
+	<div
+		class="col-auto grid grow grid-cols-1 items-center justify-center gap-y-6 p-6 md:grid-cols-4 md:gap-x-6 md:gap-y-4"
+	>
+		<div
+			class="card meet-the-team-card-elements h-[20rem] w-[16rem] bg-[#3A6351]/50 text-white shadow-sm backdrop-blur-[0.1rem]"
+		>
+			<figure class="px-10 pt-10">
+				<div class="avatar">
+					<div class="w-32 rounded-full">
+						<img src={`${blobStoreUrl}/images/team/mahaswetha.png`} alt="" />
+					</div>
+				</div>
+			</figure>
+			<div class="card-body items-center text-center">
+				<h2 class="card-title font-kanit text-3xl">Mahaswetha S</h2>
+				<p class="font-inria-sans text-xl">Head of Computer Vision</p>
+				<!-- <div class="card-actions">
+						<button class="btn">Know more</button>
+					</div> -->
+			</div>
+		</div>
+
+		<div
+			class="card meet-the-team-card-elements h-[20rem] w-[16rem] bg-[#3A6351]/50 text-white shadow-sm backdrop-blur-[0.1rem]"
+		>
+			<figure class="px-10 pt-10">
+				<div class="avatar">
+					<div class="w-32 rounded-full">
+						<img src={`${blobStoreUrl}/images/team/sumukh.png`} alt="" />
+					</div>
+				</div>
+			</figure>
+			<div class="card-body items-center text-center">
+				<h2 class="card-title font-kanit text-3xl">CKD Sumukh</h2>
+				<p class="font-inria-sans text-xl">Head of Robotronics</p>
+				<!-- <div class="card-actions">
+						<button class="btn">Know more</button>
+					</div> -->
+			</div>
+		</div>
+
+		<div
+			class="card meet-the-team-card-elements h-[20rem] w-[16rem] bg-[#3A6351]/50 text-white shadow-sm backdrop-blur-[0.1rem]"
+		>
+			<figure class="px-10 pt-10">
+				<div class="avatar">
+					<div class="w-32 rounded-full">
+						<img src={`${blobStoreUrl}/images/team/sumedh.png`} alt="" />
+					</div>
+				</div>
+			</figure>
+			<div class="card-body items-center text-center">
+				<h2 class="card-title font-kanit text-2xl">Sumedh Prabhudesai</h2>
+				<p class="font-inria-sans text-lg">Head of Embedded Systems</p>
+				<!-- <div class="card-actions">
+						<button class="btn">Know more</button>
+					</div> -->
+			</div>
+		</div>
+
+		<div
+			class="card meet-the-team-card-elements h-[20rem] w-[16rem] bg-[#3A6351]/50 text-white shadow-sm backdrop-blur-[0.1rem]"
+		>
+			<figure class="px-10 pt-10">
+				<div class="avatar">
+					<div class="w-32 rounded-full">
+						<img src={`${blobStoreUrl}/images/team/dheeraj.png`} alt="" />
+					</div>
+				</div>
+			</figure>
+			<div class="card-body items-center text-center">
+				<h2 class="card-title font-kanit text-2xl">Dheeraj Anandan</h2>
+				<p class="font-inria-sans text-lg">Head of IOT and Circuitry</p>
+				<!-- <div class="card-actions">
+						<button class="btn">Know more</button>
+					</div> -->
 			</div>
 		</div>
 	</div>

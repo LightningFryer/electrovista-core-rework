@@ -2,7 +2,7 @@
 	import { blobStoreUrl } from '$lib/blobStoreUrl';
 </script>
 
-<footer class="footer md:footer-horizontal text-neutral-content bg-[#3A6351] z-10 p-10">
+<footer class="footer md:footer-horizontal text-neutral-content z-10 bg-[#3A6351] p-10">
 	<aside>
 		<img
 			src={`${blobStoreUrl}/images/logos/elec_full_logo.png`}
