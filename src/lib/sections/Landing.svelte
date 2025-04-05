@@ -34,7 +34,9 @@
 	class="dotted-background-wrapper flex h-screen flex-col items-center justify-center !bg-[#171717]"
 	id="landing-sec"
 >
-	<div class="text-default-text mt-20 flex h-full w-full flex-col items-center justify-center">
+	<div
+		class="text-default-text mt-20 flex h-full w-full flex-col items-center justify-center gap-y-6"
+	>
 		<div class="flex flex-row items-center justify-center">
 			<h1
 				class="elec-main-text font-league-gothic text-[4rem] font-semibold text-white md:ml-20 md:text-[10rem]"
@@ -56,9 +58,11 @@
 				VISTA!
 			</h1>
 		</div>
-
+		<h2 class="font-kanit text-lg font-semibold text-white md:text-2xl">
+			OFFICIAL ECE CLUB OF <span class="text-[#ac533c]">MITBLR</span>
+		</h2>
 		<button
-			class="btn btn-lg font-kanit mt-12 cursor-pointer rounded-full font-light shadow-none hover:border-[#3A6351] hover:bg-[#3A6351] hover:text-white"
+			class="btn btn-lg font-kanit mt-6 cursor-pointer rounded-full font-light shadow-none hover:border-[#3A6351] hover:bg-[#3A6351] hover:text-white"
 			>Scroll on to see more!</button
 		>
 	</div>
