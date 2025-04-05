@@ -78,7 +78,7 @@
 				<div class="card bg-iot-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
 						<h2 class="card-title font-kanit text-3xl">Bionic arm with flex sensors</h2>
-						<p class="text-lg font-inria-sans">
+						<p class="font-inria-sans text-lg">
 							The ESP32-based Bionic Arm is a gesture-controlled robotic arm designed to mimic human
 							hand movements using flex sensors and an MPU6050 IMU sensor.
 						</p>
@@ -91,6 +91,11 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="flex w-full flex-col pr-12 pb-12 pl-12 md:-mt-12">
+		<h1 class="font-bebas text-center text-2xl md:text-4xl">
+			Thinking of a cool project? We’d love to hear from you—get in touch!
+		</h1>
 	</div>
 </main>
 

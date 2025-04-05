@@ -207,6 +207,11 @@
 			</div>
 		</div>
 	</div>
+	<div class="flex w-full flex-col pr-12 pb-12 pl-12 md:-mt-12">
+		<h1 class="font-bebas text-center text-2xl md:text-4xl">
+			Thinking of a cool project? We’d love to hear from you—get in touch!
+		</h1>
+	</div>
 </main>
 
 <style>
