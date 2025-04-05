@@ -1,6 +1,6 @@
 <script>
 	import { blobStoreUrl } from '$lib/blobStoreUrl';
-	import { Instagram, Lightbulb } from 'lucide-svelte';
+	import { Instagram, Lightbulb, Linkedin } from 'lucide-svelte';
 </script>
 
 <footer
@@ -22,6 +22,9 @@
 				target="_blank"
 			>
 				<Instagram />
+			</a>
+			<a href="https://www.linkedin.com/company/electro-vista/" target="_blank">
+				<Linkedin />
 			</a>
 			<a
 				href="https://linktr.ee/ElectroVista?utm_source=linktree_profile_share&ltsid=2a58d291-186b-449a-8dde-7bc59d9a0b2b"
