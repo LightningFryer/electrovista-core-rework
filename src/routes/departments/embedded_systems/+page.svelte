@@ -86,6 +86,83 @@
 	</div>
 </div>
 
+<input type="checkbox" id="es_modal_1" class="modal-toggle" />
+<div class="modal flex w-full flex-col items-center justify-center" role="dialog">
+	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-7 md:!w-[60%]">
+		<h3 class="font-kanit text-center text-4xl font-bold">
+			Hybrid Terrestrial-Satellite IoT Network via CubeSats
+		</h3>
+		<div class="font-inria-sans flex flex-col gap-y-5 text-2xl">
+			<p>
+				Our hardware encryption solution implements AES-256 for resource-constrained environments,
+				utilizing dedicated hardware acceleration to offload cryptographic operations from host
+				systems
+			</p>
+
+			<h3 class="font-kanit text-center text-2xl font-semibold">Architecture Overview</h3>
+
+			<p>
+				The device employs a heterogeneous computing architecture combining an STM32 F401RE NUCLEO
+				microcontroller with a Xilinx Artix-7 Nexys A7-50T FPGA module, all housed in a Gavin's
+				Hooli box-styled encasement. This configuration provides superior performance compared to
+				software-based encryption solutions while maintaining minimal power consumption
+			</p>
+
+			<h3 class="font-kanit text-center text-2xl font-semibold">Technical Implementation</h3>
+			<p class="">Hardware Components</p>
+			<ul class="list-disc p-6">
+				<li class="text-lg">
+					<span class="font-semibold">STM32 F401RE NUCLEO MCU</span>: Manages control flow and I/O
+					operations
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">Xilinx Artix-7 Nexys A7-50T FPGA</span>: Implements dedicated
+					cryptographic processing units
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">STM32 F401RE NUCLEO MCU</span>: Manages control flow and I/O
+					operations
+				</li>
+			</ul>
+
+			<p class="">Encryption Pipeline</p>
+			<ul class="list-disc p-6">
+				<li class="text-lg">
+					<span class="font-semibold">Key Expansion Unit</span>: Generates round keys using
+					non-linear S-box transformations
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">SubBytes Operation</span>: Implements lookup table (LUT) based
+					substitution for optimal timing
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">ShiftRows/MixColumns</span>: Utilizes parallel processing with
+					register transfer level (RTL) optimizations
+				</li>
+				<li class="text-lg">
+					<span class="font-semibold">AddRoundKey</span>: Performs bitwise XOR operations between
+					state and round key
+				</li>
+			</ul>
+			<p>
+				The design leverages SystemVerilog parameterized modules with clock domain crossing (CDC)
+				synchronizers to ensure reliable data transfer between the MCU and FPGA domains.
+			</p>
+
+			<p class="">Encryption Pipeline</p>
+			<ul class="list-disc p-6">
+				<li>Hardware-isolated key storage prevents exposure to software vulnerabilities</li>
+				<li>Side-channel attack countermeasures including constant-time operations</li>
+				<li>Physical tamper detection circuitry with automatic key zeroization</li>
+				<li>True hardware random number generator (TRNG) for key generation</li>
+			</ul>
+		</div>
+		<div class="modal-action">
+			<label for="es_modal_1" class="btn hover:btn-error">Close!</label>
+		</div>
+	</div>
+</div>
+
 <main
 	class="dotted-background-wrapper text-purple flex min-h-screen flex-col items-center justify-center !bg-[#F1B81A]"
 >
@@ -126,7 +203,7 @@
 				<div class="card bg-es-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
 						<h2 class="card-title text-3xl">
-							Efficient Thermal Management System for Small Satellites
+							Hybrid Terrestrial-Satellite IoT Network via CubeSats
 						</h2>
 						<p>
 							A card component has a figure, a body part, and inside body there are title and

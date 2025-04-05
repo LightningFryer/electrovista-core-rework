@@ -58,7 +58,6 @@
 		</div>
 
 		<button
-			onclick={scrollToDept}
 			class="btn btn-lg font-kanit mt-12 cursor-pointer rounded-full font-light shadow-none hover:border-[#3A6351] hover:bg-[#3A6351] hover:text-white"
 			>Scroll on to see more!</button
 		>
