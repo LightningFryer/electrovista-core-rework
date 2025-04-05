@@ -12,7 +12,9 @@
 <input type="checkbox" id="robo-proj-1" class="modal-toggle" />
 <div class="modal flex w-full flex-col items-center justify-center" role="dialog">
 	<div class="modal-box flex h-[95%] !w-[95%] !max-w-full flex-col gap-y-7 md:!w-[60%]">
-		<h3 class="font-kanit text-center text-2xl font-bold md:text-4xl">Obstacle avoidance robot</h3>
+		<h3 class="font-kanit text-center text-2xl font-bold md:text-4xl">
+			Bionic arm with flex sensors
+		</h3>
 		<div class="flex flex-col items-center justify-center gap-y-7">
 			<figure>
 				<video src={`${blobStoreUrl}/videos/robotronics/robo_proj_1_vid.mp4`} muted controls
@@ -20,10 +22,6 @@
 			</figure>
 			<h3 class="font-kanit text-2xl font-semibold">Circuit Diagram</h3>
 			<img src={`${blobStoreUrl}/images/dept_images/iot/iot-proj-1.jpg`} alt="" />
-			<p class="font-inria-sans text-2xl">
-				This is a robot that can detect and avoid obstacles in its path using ultrasonic sensors and
-				camera vision.
-			</p>
 			<p class="font-inria-sans text-2xl">
 				The ESP32-based Bionic Arm is a gesture-controlled robotic arm designed to mimic human hand
 				movements using flex sensors and an MPU6050 IMU sensor. The system utilizes an ESP32
@@ -69,7 +67,7 @@
 						<img src={`${blobStoreUrl}/images/team/dheeraj.png`} alt="robotronics_dept_head" />
 					</div>
 				</div>
-				<p class="font-inria-sans text-3xl font-bold">Sumedh Prabhudeshai</p>
+				<p class="font-inria-sans text-3xl font-bold">Dheeraj Anandan</p>
 			</div>
 		</div>
 
@@ -80,10 +78,10 @@
 			>
 				<div class="card bg-circuitry-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
-						<h2 class="card-title text-3xl">Bionic arm with flex sensors</h2>
-						<p>
-							A card component has a figure, a body part, and inside body there are title and
-							actions parts
+						<h2 class="card-title font-kanit text-3xl">Bionic arm with flex sensors</h2>
+						<p class="font-inria-sans text-lg">
+							The ESP32-based Bionic Arm is a gesture-controlled robotic arm designed to mimic human
+							hand movements using flex sensors and an MPU6050 IMU sensor.
 						</p>
 						<div class="card-actions justify-end">
 							<label

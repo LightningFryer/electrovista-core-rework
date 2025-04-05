@@ -92,70 +92,26 @@
 		<h3 class="font-kanit text-center text-4xl font-bold">
 			Hybrid Terrestrial-Satellite IoT Network via CubeSats
 		</h3>
-		<div class="font-inria-sans flex flex-col gap-y-5 text-2xl">
+		<div class="font-inria-sans flex flex-col items-center justify-center gap-y-5 text-2xl">
+			<img
+				src={`${blobStoreUrl}/images/dept_images/es/es-proj-1.jpg`}
+				class="h-[40rem] w-[30rem]"
+				alt=""
+			/>
 			<p>
-				Our hardware encryption solution implements AES-256 for resource-constrained environments,
-				utilizing dedicated hardware acceleration to offload cryptographic operations from host
-				systems
+				This project integrates terrestrial communication technologies (such as cellular, Wi-Fi, and
+				LoRaWAN) with CubeSat-based satellite communication to create a hybrid IoT network. Designed
+				to ensure reliable and seamless data transmission across remote and urban environments, the
+				system dynamically switches between ground and satellite networks based on performance,
+				cost, and availability. Key features include intelligent path selection, seamless handover,
+				and load balancing—making it ideal for applications in environmental monitoring, smart
+				agriculture, disaster response, and smart cities.
 			</p>
 
-			<h3 class="font-kanit text-center text-2xl font-semibold">Architecture Overview</h3>
-
 			<p>
-				The device employs a heterogeneous computing architecture combining an STM32 F401RE NUCLEO
-				microcontroller with a Xilinx Artix-7 Nexys A7-50T FPGA module, all housed in a Gavin's
-				Hooli box-styled encasement. This configuration provides superior performance compared to
-				software-based encryption solutions while maintaining minimal power consumption
+				The team visited ART GARAGE(ART Park) which is an affiliation of IISC They had gone with the
+				proposal to ask for funding, guidance and collaboration with industry professionals.
 			</p>
-
-			<h3 class="font-kanit text-center text-2xl font-semibold">Technical Implementation</h3>
-			<p class="">Hardware Components</p>
-			<ul class="list-disc p-6">
-				<li class="text-lg">
-					<span class="font-semibold">STM32 F401RE NUCLEO MCU</span>: Manages control flow and I/O
-					operations
-				</li>
-				<li class="text-lg">
-					<span class="font-semibold">Xilinx Artix-7 Nexys A7-50T FPGA</span>: Implements dedicated
-					cryptographic processing units
-				</li>
-				<li class="text-lg">
-					<span class="font-semibold">STM32 F401RE NUCLEO MCU</span>: Manages control flow and I/O
-					operations
-				</li>
-			</ul>
-
-			<p class="">Encryption Pipeline</p>
-			<ul class="list-disc p-6">
-				<li class="text-lg">
-					<span class="font-semibold">Key Expansion Unit</span>: Generates round keys using
-					non-linear S-box transformations
-				</li>
-				<li class="text-lg">
-					<span class="font-semibold">SubBytes Operation</span>: Implements lookup table (LUT) based
-					substitution for optimal timing
-				</li>
-				<li class="text-lg">
-					<span class="font-semibold">ShiftRows/MixColumns</span>: Utilizes parallel processing with
-					register transfer level (RTL) optimizations
-				</li>
-				<li class="text-lg">
-					<span class="font-semibold">AddRoundKey</span>: Performs bitwise XOR operations between
-					state and round key
-				</li>
-			</ul>
-			<p>
-				The design leverages SystemVerilog parameterized modules with clock domain crossing (CDC)
-				synchronizers to ensure reliable data transfer between the MCU and FPGA domains.
-			</p>
-
-			<p class="">Encryption Pipeline</p>
-			<ul class="list-disc p-6">
-				<li>Hardware-isolated key storage prevents exposure to software vulnerabilities</li>
-				<li>Side-channel attack countermeasures including constant-time operations</li>
-				<li>Physical tamper detection circuitry with automatic key zeroization</li>
-				<li>True hardware random number generator (TRNG) for key generation</li>
-			</ul>
 		</div>
 		<div class="modal-action">
 			<label for="es_modal_1" class="btn hover:btn-error">Close!</label>
@@ -202,16 +158,17 @@
 			>
 				<div class="card bg-es-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
-						<h2 class="card-title text-3xl">
+						<h2 class="card-title font-kanit text-3xl">
 							Hybrid Terrestrial-Satellite IoT Network via CubeSats
 						</h2>
-						<p>
-							A card component has a figure, a body part, and inside body there are title and
-							actions parts
+						<p class="font-inria-sans text-lg">
+							This project integrates terrestrial communication technologies (such as cellular,
+							Wi-Fi, and LoRaWAN) with CubeSat-based satellite communication to create a hybrid IoT
+							network.
 						</p>
 						<div class="card-actions justify-end">
 							<!-- <button class="btn bg-es-primary border-none shadow-none">Read More!</button> -->
-							<label for="my_modal_6" class="btn bg-es-primary border-none shadow-none"
+							<label for="es_modal_1" class="btn bg-es-primary border-none shadow-none"
 								>Read More</label
 							>
 						</div>
@@ -220,12 +177,13 @@
 
 				<div class="card bg-es-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
-						<h2 class="card-title text-3xl">
+						<h2 class="card-title font-kanit text-3xl">
 							Hardware-Assisted Encryption for Resource-Constrained Devices
 						</h2>
-						<p>
-							A card component has a figure, a body part, and inside body there are title and
-							actions parts
+						<p class="font-inria-sans text-lg">
+							Our hardware encryption solution implements AES-256 for resource-constrained
+							environments, utilizing dedicated hardware acceleration to offload cryptographic
+							operations from host systems
 						</p>
 						<div class="card-actions justify-end">
 							<label for="es_modal_2" class="btn bg-es-primary border-none shadow-none"

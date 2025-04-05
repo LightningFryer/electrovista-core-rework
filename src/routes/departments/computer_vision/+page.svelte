@@ -422,10 +422,10 @@
 			>
 				<div class="card bg-cv-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
-						<h2 class="card-title text-3xl">Obstacle avoidance robot</h2>
-						<p>
-							A card component has a figure, a body part, and inside body there are title and
-							actions parts
+						<h2 class="card-title font-kanit text-3xl">Obstacle avoidance robot</h2>
+						<p class="font-inria-sans text-lg">
+							This is a robot that can detect and avoid obstacles in its path using ultrasonic
+							sensors and camera vision.
 						</p>
 						<div class="card-actions justify-end">
 							<label for="cv-proj-1" class="btn bg-cv-primary border-none text-white shadow-none"
@@ -437,10 +437,13 @@
 
 				<div class="card bg-cv-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
-						<h2 class="card-title text-3xl">Objection Detection using Thermal Imaging Camera</h2>
-						<p>
-							This is a robot that can detect and avoid obstacles in its path using ultrasonic
-							sensors and camera vision.
+						<h2 class="card-title font-kant text-3xl">
+							Objection Detection using Thermal Imaging Camera
+						</h2>
+						<p class="font-inria-sans text-md">
+							This project detects and classifies objects based on temperature using thermal
+							imaging. A simulated version uses an Arduino and TMP36 sensor, while the real-world
+							model uses a Raspberry Pi and MLX90640 sensor with YOLO for object detection.
 						</p>
 						<div class="card-actions justify-end">
 							<label for="cv-proj-2" class="btn bg-cv-primary border-none text-white shadow-none"
@@ -452,10 +455,12 @@
 
 				<div class="card bg-cv-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
-						<h2 class="card-title text-3xl">Gesture controlled device switch</h2>
-						<p>
-							A card component has a figure, a body part, and inside body there are title and
-							actions parts
+						<h2 class="card-title font-kanit text-3xl">Gesture controlled device switch</h2>
+						<p class="font-inria-sans text-md">
+							A user wants to control a bulb in their room using hand gestures. Instead of pressing
+							a traditional switch, they can use a simple hand wave or other gestures to turn the
+							bulb on or off. This makes it easier to control the appliance without physically
+							interacting with a switch
 						</p>
 						<div class="card-actions justify-end">
 							<label for="cv-proj-3" class="btn bg-cv-primary border-none text-white shadow-none"
@@ -467,10 +472,11 @@
 
 				<div class="card bg-cv-accent md:h-[60%] md:w-[40%]">
 					<div class="card-body">
-						<h2 class="card-title text-3xl">Face Detection based door lock</h2>
-						<p>
-							A card component has a figure, a body part, and inside body there are title and
-							actions parts
+						<h2 class="card-title font-kanit text-3xl">Face Detection based door lock</h2>
+						<p class="font-inria-sans text-md">
+							This project uses a camera and face recognition algorithm to identify authorized
+							individuals in real-time. A Raspberry Pi unlocks the door for recognized faces using a
+							relay and solenoid lock
 						</p>
 						<div class="card-actions justify-end">
 							<label for="cv-proj-4" class="btn bg-cv-primary border-none text-white shadow-none"

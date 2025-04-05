@@ -112,7 +112,7 @@
 					</div>
 				</figure>
 				<div class="card-body items-center text-center">
-					<h2 class="card-title font-kanit text-3xl">Jathin Bharadwaz P</h2>
+					<h2 class="card-title font-kanit text-xl">Jathin Bharadwaz P</h2>
 					<p class="font-inria-sans text-xl">Vice president</p>
 					<!-- <div class="card-actions">
 						<button class="btn">Know more</button>
@@ -238,7 +238,7 @@
 					</div>
 				</figure>
 				<div class="card-body items-center text-center">
-					<h2 class="card-title font-kanit text-3xl">Vaisakh Melaveetil</h2>
+					<h2 class="card-title font-kanit text-2xl">Vaisakh Melaveetil</h2>
 					<p class="font-inria-sans text-xl">Graphic Designer Head</p>
 					<!-- <div class="card-actions">
 						<button class="btn">Know more</button>
@@ -325,7 +325,7 @@
 				</div>
 			</figure>
 			<div class="card-body items-center text-center">
-				<h2 class="card-title font-kanit text-2xl">Sumedh Prabhudesai</h2>
+				<h2 class="card-title font-kanit text-xl">Sumedh Prabhudesai</h2>
 				<p class="font-inria-sans text-lg">Head of Embedded Systems</p>
 				<!-- <div class="card-actions">
 						<button class="btn">Know more</button>

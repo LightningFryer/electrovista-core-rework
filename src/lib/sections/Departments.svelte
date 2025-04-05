@@ -59,14 +59,15 @@
 					>
 						Embedded Systems
 					</h2>
-					<p>
-						A card component has a figure, a body part, and inside body there are title and actions
-						parts
+					<p class="font-inria-sans">
+						Tiny computers that make smart devices work! From microwave ovens to fitness bands, they
+						help gadgets do specific tasks with precision.
 					</p>
 					<div class="card-actions">
 						<a
 							href="departments/embedded_systems"
-							class="btn border-none bg-[#edd183] text-white shadow-none">Visit Projects</a
+							class="btn font-kanit border-none bg-[#edd183] text-white shadow-none"
+							>Visit Projects</a
 						>
 					</div>
 				</div>
@@ -87,12 +88,14 @@
 					>
 						Internet of Things
 					</h2>
-					<p>
-						A card component has a figure, a body part, and inside body there are title and actions
-						parts
+					<p class="font-inria-sans">
+						Connecting everyday devices to the internet so they can talk, share data, and work
+						smarter—think smart homes, wearables, or remote sensors.
 					</p>
 					<div class="card-actions">
-						<a href="departments/iot" class="btn border-none bg-[#253d95] text-white shadow-none"
+						<a
+							href="departments/iot"
+							class="btn font-kanit border-none bg-[#253d95] text-white shadow-none"
 							>Visit Projects</a
 						>
 					</div>
@@ -114,14 +117,15 @@
 					>
 						Computer Vision
 					</h2>
-					<p>
-						A card component has a figure, a body part, and inside body there are title and actions
-						parts
+					<p class="font-inria-sans">
+						Teaching computers to see and understand images and videos—like recognizing faces,
+						tracking movement, or even spotting objects in a scene.
 					</p>
 					<div class="card-actions">
 						<a
 							href="/departments/computer_vision"
-							class="btn border-none bg-[#ad7ded] text-white shadow-none">Visit Projects</a
+							class="btn font-kanit border-none bg-[#ad7ded] text-white shadow-none"
+							>Visit Projects</a
 						>
 					</div>
 				</div>
@@ -142,14 +146,15 @@
 					>
 						Circuitry
 					</h2>
-					<p>
-						A card component has a figure, a body part, and inside body there are title and actions
-						parts
+					<p class="font-inria-sans">
+						The building blocks of electronics! It's all about connecting components to bring your
+						ideas to life—from blinking LEDs to complex systems.
 					</p>
 					<div class="card-actions">
 						<a
 							href="departments/circuitry"
-							class="btn bg-circuitry-accent border-none text-white shadow-none">Visit Projects</a
+							class="btn bg-circuitry-accent font-kanit border-none text-white shadow-none"
+							>Visit Projects</a
 						>
 					</div>
 				</div>
@@ -170,14 +175,15 @@
 					>
 						Robotronics
 					</h2>
-					<p>
-						A card component has a figure, a body part, and inside body there are title and actions
-						parts
+					<p class="font-inria-sans">
+						Creating cool machines that can move, sense, and react—like robots that can walk, grab
+						things, or even explore unknown places.
 					</p>
 					<div class="card-actions">
 						<a
 							href="departments/robotronics"
-							class="btn border-none bg-[#d4d4d4] text-white shadow-none">Visit Projects</a
+							class="btn font-kanit border-none bg-[#d4d4d4] text-white shadow-none"
+							>Visit Projects</a
 						>
 					</div>
 				</div>
