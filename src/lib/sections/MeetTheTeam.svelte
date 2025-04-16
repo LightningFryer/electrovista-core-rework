@@ -270,7 +270,7 @@
 	</div>
 
 	<h2 class="meet-the-team-card-elements font-league-gothic p-4 text-5xl text-white md:text-6xl">
-		Core Committee Heads
+		Domain Heads
 	</h2>
 
 	<div
